@@ -1,0 +1,233 @@
+<div class="add-book-container">
+
+    <h1 class="page-title">
+        Add New Book
+    </h1>
+
+    <form
+        [formGroup]="bookForm"
+        (ngSubmit)="addBook()"
+        class="book-form ">
+
+        <div class="form-group">
+
+            <label>Book Title</label>
+
+            <input
+                type="text"
+                formControlName="title">
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Author</label>
+
+            <input
+                type="text"
+                formControlName="author">
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Cover Image URL</label>
+
+            <input
+                type="text"
+                formControlName="cover">
+
+        </div>
+
+        <div class="two-column">
+
+            <div class="form-group">
+
+                <label>Genre</label>
+
+                <input
+                    type="text"
+                    formControlName="genre">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Published Year</label>
+
+                <input
+                    type="number"
+                    formControlName="year">
+
+            </div>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Status</label>
+            <div class="select-wrapper">
+                <select formControlName="status">
+
+                <option>Want to Read</option>
+                <option>Reading</option>
+                <option>Read</option>
+
+            </select>
+
+            </div>
+            
+        </div>
+
+        <div class="form-group">
+
+            <label>Rating</label>
+
+           <div class="rating-container">
+
+            <span
+                *ngFor="let star of [1,2,3,4,5]"
+                (click)="bookForm.patchValue({rating: star})"
+                [class.active]="star <= bookForm.value.rating">
+
+                ★
+
+            </span>
+
+            </div>
+            <span class="rating-text">
+                {{bookForm.value.rating}} / 5
+            </span>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Description</label>
+
+            <textarea
+                rows="4"
+                formControlName="description">
+            </textarea>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Notes</label>
+
+            <textarea
+                rows="3"
+                formControlName="notes">
+            </textarea>
+
+        </div>
+
+        <button type="submit">
+
+            Add Book
+
+        </button>
+
+    </form>
+
+    <h2 class="preview-title">
+    Live Preview
+</h2>
+
+<div class="preview-card">
+
+    <div class="cover-section">
+
+        <img
+            [src]="bookForm.value.cover || 'https://placehold.co/180x260?text=No+Cover'"
+            alt="Book Cover">
+
+    </div>
+
+    <div class="book-details">
+
+        <h2 class="book-title">
+            {{ bookForm.value.title || 'Book Title' }}
+        </h2>
+
+        <p class="book-author">
+            by {{ bookForm.value.author || 'Author Name' }}
+        </p>
+
+        <div class="book-meta">
+
+            <span class="status">
+                {{ bookForm.value.status }}
+            </span>
+
+          
+
+        </div>
+
+        <div class="info-row py-4 flex justify-between ">
+
+            <span class="label">Genre</span>
+
+            <span>
+                {{ bookForm.value.genre || 'Unknown' }}
+            </span>
+
+        </div>
+        <div class="info-row py-4 flex justify-between">
+
+            <span class="label">Year of Release</span>
+
+            <span>
+                {{ bookForm.value.year || 'Unknown' }}
+            </span>
+
+        </div>
+
+        <div class="info-row py-4 flex justify-between">
+
+            <span class="label">Rating</span>
+
+            <span class="rating-stars">
+
+                <span
+                    *ngFor="let star of [1,2,3,4,5]"
+                    [class.filled]="star <= bookForm.value.rating">
+
+                    ★
+
+                </span>
+
+            </span>
+
+        </div>
+
+        <div class="description mt-5 ">
+
+            <h4 class="mb-2">Description</h4>
+
+            <p class="text-area overflow-y-auto">
+
+                {{ bookForm.value.description || 'Add a description to see it here.' }}
+
+            </p>
+
+        </div>
+
+        <div class="notes-box mt-6 p-4 rounded-xl">
+
+            <h4 >Personal Notes</h4>
+
+            <p class="text-area overflow-y-auto">
+
+                {{ bookForm.value.notes || 'No notes added yet.' }}
+
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+</div>

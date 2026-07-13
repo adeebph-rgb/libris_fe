@@ -1,0 +1,57 @@
+<div class="settings-page p-6">
+  <div class="header-section">
+    <h1 class="page-title">Settings</h1>
+  </div>
+
+  @if (feedbackMsg()) {
+    <div class="feedback-banner" [class.error-banner]="isError()">
+      {{ feedbackMsg() }}
+    </div>
+  }
+
+  <div class="settings-sections-grid">
+    <div class="settings-card">
+      <h3 class="card-title">Profile & Preferences</h3>
+      <form [formGroup]="profileForm" (ngSubmit)="saveSettings()" class="settings-form">
+        <div class="form-group">
+          <label>Display Name</label>
+          <input type="text" formControlName="name" />
+        </div>
+
+        <div class="form-group">
+          <label>Yearly Reading Goal (books)</label>
+          <input type="number" formControlName="yearlyGoal" min="1" />
+        </div>
+
+        <button type="submit" [disabled]="profileForm.invalid" class="btn-save">
+          Save Settings
+        </button>
+      </form>
+    </div>
+
+    <div class="settings-card">
+      <h3 class="card-title">Data Management</h3>
+      <div class="data-actions">
+        <div class="action-item danger-item">
+          <p class="action-description">Permanently clear all local books, history, and reading sessions.</p>
+          <button (click)="showClearModal.set(true)" class="btn-data-action btn-danger">Reset Library Data</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  @if (showClearModal()) {
+    <div class="modal-overlay">
+      <div class="modal-card">
+        <h3 class="modal-title">Reset Library Data?</h3>
+        <p class="modal-desc">This action cannot be undone. All your ratings, statuses, and logs will be permanently deleted.</p>
+        <p class="modal-desc">Type <strong>DELETE</strong> below to confirm:</p>
+        <input type="text" [(ngModel)]="clearConfirmText" class="modal-input" placeholder="Type DELETE..." />
+        <div class="modal-actions">
+          <button (click)="showClearModal.set(false); clearConfirmText = ''" class="btn-modal btn-cancel">Cancel</button>
+          <button (click)="clearLibrary()" class="btn-modal btn-confirm">Clear Database</button>
+        </div>
+      </div>
+    </div>
+  }
+</div>

@@ -1,0 +1,45 @@
+<div class="navbar-wrapper" *ngIf="authService.currentUser() as user">
+  <div class="navbar flex items-center justify-between px-6 py-3">
+    <div class="flex items-center gap-6">
+      <div class="brand-logo-container flex items-center gap-2" routerLink="/library">
+        <svg class="brand-logo-svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+        </svg>
+        <span class="brand-text cursor-pointer">Libris</span>
+      </div>
+      <div class="nav-links-desktop flex gap-5 md:gap-7 align-center">
+        <h1 class="nav-link text-sm md:text-base font-semibold" routerLink="/library" routerLinkActive="active">My Library</h1>
+        <h1 class="nav-link text-sm md:text-base font-semibold" routerLink="/discover" routerLinkActive="active">Discover Books</h1>
+        <h1 class="nav-link text-sm md:text-base font-semibold" routerLink="/addbook" routerLinkActive="active">Add Book</h1>
+        <h1 class="nav-link text-sm md:text-base font-semibold" routerLink="/statistics" routerLinkActive="active">Statistics</h1>
+        <h1 class="nav-link text-sm md:text-base font-semibold" routerLink="/settings" routerLinkActive="active">Settings</h1>
+      </div>
+    </div>
+    
+    <div class="flex items-center gap-4">
+      <div class="user-profile flex items-center gap-2">
+        <svg class="avatar-icon-svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+        </svg>
+        <span class="user-name text-xs md:text-sm font-semibold">{{ user.name }}</span>
+      </div>
+      <button (click)="onLogout()" class="btn-logout text-xs font-semibold px-3 py-1.5 rounded">
+        Logout
+      </button>
+      <button (click)="toggleMenu()" class="btn-menu-toggle">
+        <svg class="menu-icon-svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="nav-links-mobile" [class.open]="isMenuOpen()">
+    <h1 class="nav-link-mobile" (click)="isMenuOpen.set(false)" routerLink="/library" routerLinkActive="active">My Library</h1>
+    <h1 class="nav-link-mobile" (click)="isMenuOpen.set(false)" routerLink="/discover" routerLinkActive="active">Discover Books</h1>
+    <h1 class="nav-link-mobile" (click)="isMenuOpen.set(false)" routerLink="/addbook" routerLinkActive="active">Add Book</h1>
+    <h1 class="nav-link-mobile" (click)="isMenuOpen.set(false)" routerLink="/statistics" routerLinkActive="active">Statistics</h1>
+    <h1 class="nav-link-mobile" (click)="isMenuOpen.set(false)" routerLink="/settings" routerLinkActive="active">Settings</h1>
+  </div>
+</div>
+

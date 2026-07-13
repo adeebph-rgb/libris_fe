@@ -1,0 +1,25 @@
+<div class="p-6">
+
+  @if (books.length === 0) {
+    <div class="flex flex-col items-center justify-center py-20 gap-4 text-amber-100">
+      <span class="text-6xl">📚</span>
+      <p class="text-lg">Your library is empty. Discover some books!</p>
+    </div>
+  } @else {
+    <div class="grid gap-5 items-stretch [grid-template-columns:repeat(auto-fill,minmax(200px,1fr))] [grid-auto-rows:360px]">
+      @for (book of books; track book.key; let i = $index) {
+        <div class="pb-2">
+          <app-book-card
+            [book]="book"
+            mode="library"
+            (ratingChange)="onRatingChange(i, $event)"
+            (statusChange)="onStatusChange(i, $event)"
+            (bookClick)="openBook($event)"
+            class="h-full block">
+          </app-book-card>
+        </div>
+      }
+    </div>
+  }
+
+</div>

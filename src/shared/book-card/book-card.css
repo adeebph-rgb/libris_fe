@@ -1,0 +1,109 @@
+/* Colors only */
+
+.book-card {
+    background: #FFF8EE;
+    border: 2px solid #E5CB90;
+}
+
+.add-overlay {
+    background: linear-gradient(to top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.1) 60%, transparent 100%);
+}
+
+.add-btn {
+    background: #E5CB90;
+    color: #2E4A4F;
+    border: none;
+}
+
+.add-btn:hover:not(.added) {
+    background: #34A99D;
+    color: white;
+}
+
+.add-btn.added {
+    background: #2E4A4F;
+    color: #E5CB90;
+    cursor: default;
+}
+
+
+.no-cover-placeholder {
+    background: linear-gradient(135deg, #2E4A4F 0%, #3d6268 40%, #4a7a81 60%, #2E4A4F 100%);
+    border-bottom: 3px solid #E5CB90;
+    position: relative;
+}
+
+.no-cover-placeholder::before {
+    content: '';
+    position: absolute;
+    left: 16px;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: rgba(229, 203, 144, 0.4);
+    border-radius: 0 2px 2px 0;
+}
+
+.no-cover-title {
+    color: #FFF8EE;
+}
+
+.no-cover-author {
+    color: #E5CB90;
+}
+
+.book-title {
+    color: #2E4A4F;
+}
+
+.author {
+    color: #777;
+}
+
+.rating span {
+    color: #ddd;
+}
+
+.rating .filled {
+    color: #FFD166;
+}
+
+.status-select {
+    background: #34A99D;
+    color: white;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.status-select option {
+    background: white;
+    color: #2E4A4F;
+}
+
+.progress-section {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 4px;
+}
+
+.progress-label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.68rem;
+    color: #888;
+}
+
+.progress-track {
+    height: 5px;
+    background: #e8e0d4;
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #34A99D, #E5CB90);
+    border-radius: 999px;
+    transition: width 0.4s ease;
+}

@@ -1,0 +1,77 @@
+<div class="statistics-page p-6">
+  <div class="header-section">
+    <h1 class="page-title">Reading Insights</h1>
+    <p class="subtitle">Detailed statistics about your personal library and reading accomplishments</p>
+  </div>
+
+  @if (totalBooks() === 0) {
+    <div class="empty-state">
+      <p class="empty-message">No statistics available yet. Add books to your library to track progress!</p>
+    </div>
+  } @else {
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="card-icon bg-teal"></div>
+        <div class="card-info">
+          <span class="card-label">Total Books</span>
+          <h2 class="card-value">{{ totalBooks() }}</h2>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <div class="card-icon bg-gold"></div>
+        <div class="card-info">
+          <span class="card-label">Completed</span>
+          <h2 class="card-value">{{ booksRead() }}</h2>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <div class="card-icon bg-green"></div>
+        <div class="card-info">
+          <span class="card-label">Pages Read</span>
+          <h2 class="card-value">{{ totalPagesRead() }}</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="insights-container">
+      <div class="goal-panel">
+        <h3 class="panel-title">Yearly Reading Goal</h3>
+        <div class="goal-progress-wrap">
+          <div class="goal-circular">
+            <svg class="progress-ring" width="120" height="120">
+              <circle class="progress-ring-bg" stroke="#f0ebe0" stroke-width="8" fill="transparent" r="50" cx="60" cy="60" />
+              <circle
+                class="progress-ring-bar"
+                stroke="#34A99D"
+                stroke-width="8"
+                stroke-dasharray="314.159"
+                [attr.stroke-dashoffset]="314.159 - (314.159 * goalProgressPercent() / 100)"
+                stroke-linecap="round"
+                fill="transparent"
+                r="50"
+                cx="60"
+                cy="60" />
+            </svg>
+            <div class="goal-text">
+              <span class="percent">{{ goalProgressPercent() }}%</span>
+            </div>
+          </div>
+          <div class="goal-details">
+            <h4 class="goal-status-title">Target Goal: {{ yearlyGoal() }} Books</h4>
+            <p class="goal-status-desc">
+              You have read <strong>{{ booksRead() }}</strong> of <strong>{{ yearlyGoal() }}</strong> books.
+              @if (booksRead() >= yearlyGoal()) {
+                You achieved your reading goal for this year!
+              } @else {
+                Keep going! You need {{ yearlyGoal() - booksRead() }} more books to achieve your goal.
+              }
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  }
+</div>
+

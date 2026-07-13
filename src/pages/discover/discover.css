@@ -1,0 +1,78 @@
+/* Colors only */
+
+.category-heading {
+    color: #FFF3C8;
+    border-color: #E5CB90;
+}
+
+.loading-state {
+    color: #FFF3C8;
+}
+
+.spinner {
+    position: relative;
+    width: 48px;
+    height: 48px;
+}
+
+.spinner::before, .spinner::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border: 3px solid transparent;
+    border-radius: 50%;
+    animation: spinDual 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+}
+
+.spinner::before {
+    border-top-color: #E5CB90;
+    border-bottom-color: #E5CB90;
+}
+
+.spinner::after {
+    border-left-color: #2E4A4F;
+    border-right-color: #2E4A4F;
+    animation-duration: 0.8s;
+    animation-direction: reverse;
+}
+
+@keyframes spinDual {
+    to { transform: rotate(360deg); }
+}
+
+.error-state {
+    color: #FFF3C8;
+}
+
+.discover-row {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 1.25rem;
+    padding-bottom: 1.25rem;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+.discover-row::-webkit-scrollbar {
+    height: 8px;
+}
+
+.discover-row::-webkit-scrollbar-track {
+    background: rgba(46, 74, 79, 0.2);
+    border-radius: 999px;
+}
+
+.discover-row::-webkit-scrollbar-thumb {
+    background: #E5CB90;
+    border-radius: 999px;
+}
+
+.discover-row::-webkit-scrollbar-thumb:hover {
+    background: #FFF3C8;
+}
+
+.discover-row app-book-card {
+    flex: 0 0 180px;
+    height: 320px;
+}

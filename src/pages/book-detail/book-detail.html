@@ -1,0 +1,251 @@
+
+<div class="detail-page">
+
+
+  @if (loading()) {
+    <div class="loading-screen">
+      <div class="spinner-large"></div>
+      <p>Loading book...</p>
+    </div>
+  }
+
+
+  @else if (error()) {
+    <div class="error-screen">
+      <span class="error-icon">📚</span>
+      <p>{{ error() }}</p>
+      <button class="btn-back" (click)="goBack()">← Back to Discover</button>
+    </div>
+  }
+
+
+  @else if (book()) {
+
+    <div class="content-wrapper">
+      <div class="top-bar">
+        <button class="btn-back-hero" (click)="goBack()">← Back</button>
+      </div>
+
+      <div class="content-row">
+      <aside class="sidebar">
+
+
+        <div class="cover-card">
+          @if (coverLarge) {
+            <img class="cover-img" [src]="coverLarge" [alt]="book().title" />
+          } @else {
+            <div class="no-cover-large">
+              <span class="book-icon">📖</span>
+              <p>{{ book().title }}</p>
+            </div>
+          }
+        </div>
+
+        <div class="action-card">
+          @if (!inLibrary()) {
+            <button class="btn-add-library" (click)="addToLibrary()">
+              + Add to Library
+            </button>
+          } @else {
+            <div class="in-library-badge">
+              <span>✓ In Your Library</span>
+            </div>
+          }
+
+
+          <div class="rating-section">
+            <label class="section-label">Your Rating</label>
+            <div class="stars">
+              @for (star of [1,2,3,4,5]; track star) {
+                <span
+                  class="star"
+                  [class.filled]="star <= userRating()"
+                  (click)="setRating(star)">★</span>
+              }
+            </div>
+          </div>
+
+          <div class="status-section">
+            <label class="section-label">Reading Status</label>
+            <select class="status-select" [value]="userStatus()" (change)="setStatus($event)">
+              @for (s of statuses; track s) {
+                <option [value]="s">{{ s }}</option>
+              }
+            </select>
+          </div>
+
+          <div class="pages-section">
+            <label class="section-label">Reading Progress</label>
+            @if (showPagesInput()) {
+              <div class="pages-inputs">
+                <input
+                  type="number"
+                  class="pages-input"
+                  [value]="userPagesRead()"
+                  (change)="setPagesRead($event)"
+                  min="0"
+                  placeholder="0">
+                <span class="pages-sep">of</span>
+                <input
+                  type="number"
+                  class="pages-input"
+                  [value]="userTotalPages()"
+                  (change)="setTotalPages($event)"
+                  min="0"
+                  placeholder="pages">
+              </div>
+              @if (userTotalPages() > 0) {
+                <div class="detail-progress-track">
+                  <div class="detail-progress-fill" [style.width.%]="progressPercent()"></div>
+                </div>
+                <div class="progress-meta">
+                  <span>{{ progressPercent() }}% complete</span>
+                  @if (readingTimeEstimate()) {
+                    <span class="time-est">⏳ {{ readingTimeEstimate() }} left</span>
+                  }
+                </div>
+              }
+            } @else {
+              <button class="btn-track-pages" (click)="showPagesInput.set(true)">+ Track Pages</button>
+            }
+          </div>
+
+          @if (userDateStarted() || userDateFinished()) {
+            <div class="dates-section">
+              @if (userDateStarted()) {
+                <div class="date-row">
+                  <span class="date-icon">📅</span>
+                  <span class="date-label">Started</span>
+                  <span class="date-value">{{ userDateStarted() | date:'MMM d, y' }}</span>
+                </div>
+              }
+              @if (userDateFinished()) {
+                <div class="date-row">
+                  <span class="date-icon">✅</span>
+                  <span class="date-label">Finished</span>
+                  <span class="date-value">{{ userDateFinished() | date:'MMM d, y' }}</span>
+                </div>
+              }
+              @if (userDateStarted() && userDateFinished()) {
+                <div class="date-row highlight-row">
+                  <span class="date-icon">⏱️</span>
+                  <span class="date-label">Read in</span>
+                  <span class="date-value">{{ daysToRead() }} days</span>
+                </div>
+              }
+            </div>
+          }
+
+          @if (canBorrow) {
+            <a class="btn-borrow" [href]="borrowUrl" target="_blank" rel="noopener">
+              📖 Read / Borrow Online
+            </a>
+          } @else {
+            <a class="btn-open-library" [href]="openLibraryUrl" target="_blank" rel="noopener">
+              View on Open Library ↗
+            </a>
+          }
+        </div>
+
+
+
+        @if (justAdded()) {
+          <div class="toast">✓ Added to your library!</div>
+        }
+
+      </aside>
+
+
+      <main class="main-info">
+
+        <div class="title-section">
+          @if (book().seriesName) {
+            <p class="series-tag">{{ book().seriesName }}
+              @if (book().seriesPosition) {
+                · Book {{ book().seriesPosition }}
+              }
+            </p>
+          }
+          <h1 class="book-title">{{ book().title }}</h1>
+          <p class="book-authors">by {{ book().authors?.join(', ') }}</p>
+
+
+          <div class="meta-chips">
+            @if (book().year) {
+              <span class="chip chip-year">📅 {{ book().year }}</span>
+            }
+            @if (book().editionCount) {
+              <span class="chip chip-editions">📚 {{ book().editionCount }} editions</span>
+            }
+          </div>
+        </div>
+
+        <hr class="divider" />
+
+        @if (detailsLoading()) {
+          <div class="details-loading">
+            <div class="shimmer-line"></div>
+            <div class="shimmer-line short"></div>
+            <div class="shimmer-line"></div>
+            <div class="shimmer-line short"></div>
+          </div>
+        } @else {
+          @if (description) {
+            <section class="info-section">
+              <h2 class="section-title">About this Book</h2>
+              <p class="description-text">{{ description }}</p>
+            </section>
+          }
+
+          @if (firstSentence) {
+            <section class="info-section">
+              <h2 class="section-title">First Line</h2>
+              <blockquote class="first-sentence">
+                "{{ firstSentence }}"
+              </blockquote>
+            </section>
+          }
+
+
+          @if (subjects.length > 0) {
+            <section class="info-section">
+              <h2 class="section-title">Genres & Subjects</h2>
+              <div class="tag-cloud">
+                @for (subject of subjects; track subject) {
+                  <span class="tag">{{ subject }}</span>
+                }
+              </div>
+            </section>
+          }
+
+
+          @if (subjectTimes.length > 0) {
+            <section class="info-section">
+              <h2 class="section-title">🕰️ Time Periods</h2>
+              <div class="tag-cloud">
+                @for (time of subjectTimes; track time) {
+                  <span class="tag tag-time">{{ time }}</span>
+                }
+              </div>
+            </section>
+          }
+
+          @if (book().languages?.length > 0) {
+            <section class="info-section">
+              <h2 class="section-title">🌍 Available Languages</h2>
+              <div class="tag-cloud">
+                @for (lang of book().languages?.slice(0, 12); track lang) {
+                  <span class="tag tag-lang">{{ lang | uppercase }}</span>
+                }
+                @if (book().languages?.length > 12) {
+                  <span class="tag tag-more">+{{ book().languages.length - 12 }} more</span>
+                }
+              </div>
+            </section>
+          }
+        }
+      </main>
+      </div>
+    </div>
+  }
+</div>

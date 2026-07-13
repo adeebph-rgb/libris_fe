@@ -1,0 +1,102 @@
+<div class="book-card flex flex-col overflow-hidden rounded-2xl cursor-pointer shadow-md transition-[transform,box-shadow] duration-300 ease-in-out hover:-translate-y-1 hover:scale-[1.02] hover:shadow-2xl h-full"
+     (click)="onCardClick()">
+
+
+  @if (mode === 'discover') {
+    <div class="discover-cover-wrap relative flex-1 overflow-hidden"
+         [class.h-full]="mode === 'discover'">
+
+      @if (hasCover) {
+        <img
+          class="w-full h-full object-cover"
+          [src]="book?.cover"
+          [alt]="book?.title">
+      } @else {
+        <div class="no-cover-placeholder h-full flex flex-col items-center justify-center gap-3 px-4 text-center">
+          <p class="no-cover-title line-clamp-3 text-sm font-semibold leading-snug font-['Cormorant_Garamond',serif]">
+            {{ book?.title }}
+          </p>
+          <p class="no-cover-author text-xs truncate w-full">
+            {{ book?.authors?.[0] }}
+          </p>
+        </div>
+      }
+
+
+      <div class="add-overlay absolute inset-0 flex flex-col items-center justify-end pb-4 opacity-0 transition-opacity duration-300 hover:opacity-100">
+        <button
+          class="add-btn text-sm font-semibold px-4 py-2 rounded-full transition-transform duration-200 active:scale-95"
+          [class.added]="inLibrary"
+          (click)="onAdd($event)">
+          {{ inLibrary ? '✓ In Library' : '+ Add to Library' }}
+        </button>
+      </div>
+
+    </div>
+  }
+
+
+  @if (mode === 'library') {
+
+    @if (hasCover) {
+      <img
+        class="w-full h-40 object-cover shrink-0"
+        [src]="book?.cover"
+        [alt]="book?.title">
+    } @else {
+      <div class="no-cover-placeholder h-40 flex flex-col items-center justify-center gap-3 px-4 text-center shrink-0">
+        <p class="no-cover-title line-clamp-3 text-sm font-semibold leading-snug font-['Cormorant_Garamond',serif]">
+          {{ book?.title }}
+        </p>
+        <p class="no-cover-author text-xs truncate w-full">
+          {{ book?.authors?.[0] ?? book?.author }}
+        </p>
+      </div>
+    }
+
+    <div class="p-3 flex flex-col gap-2 flex-1">
+
+      <h3 class="book-title text-base font-semibold m-0 leading-snug line-clamp-2 font-['Cormorant_Garamond',serif]">
+        {{ book?.title }}
+      </h3>
+
+      <p class="author text-[0.8rem] m-0 truncate">
+        {{ book?.authors?.join(', ') ?? book?.author }}
+      </p>
+
+      <div class="rating flex gap-0.5 mt-1" (click)="$event.stopPropagation()">
+        <span
+          *ngFor="let star of [1,2,3,4,5]"
+          class="text-xl cursor-pointer transition-transform duration-100 hover:scale-125"
+          [class.filled]="star <= book?.rating"
+          (click)="setRating(star)">
+          ★
+        </span>
+      </div>
+
+      <select
+        class="status-select mt-auto text-xs px-2 py-1.5 rounded-md border-0 cursor-pointer outline-none w-full"
+        [value]="book?.status"
+        (click)="$event.stopPropagation()"
+        (change)="setStatus($event)">
+        @for (s of statuses; track s) {
+          <option [value]="s">{{ s }}</option>
+        }
+      </select>
+
+      @if (book?.totalPages) {
+        <div class="progress-section" (click)="$event.stopPropagation()">
+          <div class="progress-label">
+            <span>{{ book?.pagesRead ?? 0 }} / {{ book?.totalPages }} pages</span>
+            <span>{{ progressPercent }}%</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" [style.width.%]="progressPercent"></div>
+          </div>
+        </div>
+      }
+
+    </div>
+  }
+
+</div>

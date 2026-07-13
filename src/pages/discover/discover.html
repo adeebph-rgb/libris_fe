@@ -1,0 +1,61 @@
+<div class="p-6">
+  <app-search-bar (search)="onSearch($event)"></app-search-bar>
+
+  @if (isSearching()) {
+    <div class="flex flex-col items-center justify-center py-20 px-6 gap-4 loading-state">
+      <div class="spinner"></div>
+      <p>Searching books...</p>
+    </div>
+  } @else if (searchResults()) {
+    @if (error()) {
+      <div class="text-center py-16 px-6 error-state">
+        <p>{{ error() }}</p>
+      </div>
+    } @else {
+      <section class="mb-10">
+        <h2 class="text-2xl font-bold mb-4 font-['Cormorant_Garamond',serif] border-l-4 pl-3 category-heading">
+          Search Results
+        </h2>
+        <div class="grid gap-5 [grid-template-columns:repeat(auto-fill,minmax(180px,1fr))] [grid-auto-rows:280px]">
+          @for (book of searchResults(); track book.key) {
+            <app-book-card
+              [book]="book"
+              [inLibrary]="isInLibrary(book)"
+              (addToLibrary)="addBook(book)"
+              (bookClick)="openBook($event)">
+            </app-book-card>
+          }
+        </div>
+      </section>
+    }
+  } @else {
+    @if (loading()) {
+      <div class="flex flex-col items-center justify-center py-20 px-6 gap-4 loading-state">
+        <div class="spinner"></div>
+        <p>Loading books...</p>
+      </div>
+    } @else if (error()) {
+      <div class="text-center py-16 px-6 error-state">
+        <p>{{ error() }}</p>
+      </div>
+    } @else {
+      @for (category of categories(); track category.name) {
+        <section class="mb-10">
+          <h2 class="text-2xl font-bold mb-4 font-['Cormorant_Garamond',serif] border-l-4 pl-3 category-heading">
+            {{ category.name }}
+          </h2>
+          <div class="discover-row">
+            @for (book of category.books; track book.key) {
+              <app-book-card
+                [book]="book"
+                [inLibrary]="isInLibrary(book)"
+                (addToLibrary)="addBook(book)"
+                (bookClick)="openBook($event)">
+              </app-book-card>
+            }
+          </div>
+        </section>
+      }
+    }
+  }
+</div>
