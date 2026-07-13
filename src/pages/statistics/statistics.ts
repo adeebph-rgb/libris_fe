@@ -2,11 +2,12 @@ import { Component, OnInit, signal, computed } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Library } from '../../services/library';
 import { AuthService } from '../../services/auth';
+import { LucideBookOpen, LucideBookCheck, LucideFileText } from '@lucide/angular';
 
 @Component({
   selector: 'app-statistics',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, LucideBookOpen, LucideBookCheck, LucideFileText],
   templateUrl: './statistics.html',
   styleUrl: './statistics.css'
 })

@@ -76,11 +76,10 @@
 
       <select
         class="status-select mt-auto text-xs px-2 py-1.5 rounded-md border-0 cursor-pointer outline-none w-full"
-        [value]="book?.status"
         (click)="$event.stopPropagation()"
         (change)="setStatus($event)">
         @for (s of statuses; track s) {
-          <option [value]="s">{{ s }}</option>
+          <option [value]="s" [selected]="s === book?.status">{{ s }}</option>
         }
       </select>
 

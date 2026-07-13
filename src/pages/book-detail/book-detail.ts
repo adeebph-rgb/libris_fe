@@ -40,7 +40,7 @@ export class BookDetail implements OnInit {
   readingTimeEstimate = computed(() => {
     const remaining = this.userTotalPages() - this.userPagesRead();
     if (remaining <= 0 || !this.userTotalPages()) return '';
-    const minutes = remaining * 1.25;
+    const minutes = remaining * 2.5;
     if (minutes < 60) return `${Math.round(minutes)} min`;
     const hours = minutes / 60;
     if (hours < 10) return `${hours.toFixed(1)} hrs`;
@@ -110,9 +110,21 @@ export class BookDetail implements OnInit {
   get description(): string {
     const d = this.details()?.description;
     if (!d) return '';
-    if (typeof d === 'string') return d;
-    if (typeof d === 'object' && d.value) return d.value;
-    return '';
+    const raw = typeof d === 'string' ? d : d.value || '';
+    
+    let cleaned = raw;
+    const splitIdx = raw.search(/(?:Contains|Contents|Table of Contents|-{3,})/i);
+    if (splitIdx !== -1) {
+      cleaned = raw.substring(0, splitIdx);
+    }
+
+    return cleaned
+      .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+      .replace(/\*\*([^*]+)\*\*/g, '$1')
+      .replace(/\*([^*]+)\*/g, '$1')
+      .replace(/__([^_]+)__/g, '$1')
+      .replace(/_([^_]+)_/g, '$1')
+      .trim();
   }
 
   get subjects(): string[] {
@@ -176,8 +188,14 @@ export class BookDetail implements OnInit {
     const value = (event.target as HTMLSelectElement).value;
     this.userStatus.set(value);
     const today = new Date().toISOString().split('T')[0];
-    if (value === 'Reading' && !this.userDateStarted()) {
-      this.userDateStarted.set(today);
+    if (value === 'Want to Read') {
+      this.userDateStarted.set('');
+      this.userDateFinished.set('');
+      this.userPagesRead.set(0);
+    }
+    if (value === 'Reading') {
+      this.userDateFinished.set('');
+      if (!this.userDateStarted()) this.userDateStarted.set(today);
     }
     if (value === 'Read') {
       this.userDateFinished.set(today);
@@ -225,6 +243,7 @@ export class BookDetail implements OnInit {
       const idx = books.findIndex((b: any) => b.key === this.book()?.key);
       if (idx !== -1) {
         this.library.updateBook(idx, {
+          status: this.userStatus(),
           rating: this.userRating(),
           pagesRead: this.userPagesRead(),
           totalPages: this.userTotalPages(),

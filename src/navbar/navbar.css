@@ -62,7 +62,6 @@ h1 {
     color: #FFF3C8;
     border: 1.5px solid #FFF3C8;
     cursor: pointer;
-    border-radius: 999px;
     padding: 0.4rem 1.1rem;
     font-size: 0.78rem;
     font-weight: 700;
@@ -72,9 +71,10 @@ h1 {
 }
 
 .btn-logout:hover {
-    background: red;
+    background: rgb(215, 27, 27);
     color: #FFF3C8;
-    border-color: #FFF3C8;
+    border-color: #34A99D;
+    
 }
 
 .btn-logout:active {

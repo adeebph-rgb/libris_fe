@@ -28,14 +28,18 @@ export class Library {
         const changes: any = { status };
         const book = this.books[index];
         const today = new Date().toISOString().split('T')[0];
-        if (status === 'Reading' && !book.dateStarted) {
-            changes.dateStarted = today;
+        if (status === 'Want to Read') {
+            changes.dateStarted = '';
+            changes.dateFinished = '';
+            changes.pagesRead = 0;
+        }
+        if (status === 'Reading') {
+            changes.dateFinished = '';
+            if (!book.dateStarted) changes.dateStarted = today;
         }
         if (status === 'Read') {
             changes.dateFinished = today;
-            if (!book.dateStarted) {
-                changes.dateStarted = today;
-            }
+            if (!book.dateStarted) changes.dateStarted = today;
         }
         this.updateBook(index, changes);
     }

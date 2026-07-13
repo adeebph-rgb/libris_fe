@@ -11,7 +11,9 @@
   } @else {
     <div class="stats-grid">
       <div class="stat-card">
-        <div class="card-icon bg-teal"></div>
+        <div class="card-icon bg-teal">
+          <svg lucideBookOpen></svg>
+        </div>
         <div class="card-info">
           <span class="card-label">Total Books</span>
           <h2 class="card-value">{{ totalBooks() }}</h2>
@@ -19,7 +21,9 @@
       </div>
 
       <div class="stat-card">
-        <div class="card-icon bg-gold"></div>
+        <div class="card-icon bg-gold">
+          <svg lucideBookCheck></svg>
+        </div>
         <div class="card-info">
           <span class="card-label">Completed</span>
           <h2 class="card-value">{{ booksRead() }}</h2>
@@ -27,7 +31,9 @@
       </div>
 
       <div class="stat-card">
-        <div class="card-icon bg-green"></div>
+        <div class="card-icon bg-green">
+          <svg lucideFileText></svg>
+        </div>
         <div class="card-info">
           <span class="card-label">Pages Read</span>
           <h2 class="card-value">{{ totalPagesRead() }}</h2>

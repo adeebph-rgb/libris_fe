@@ -67,9 +67,9 @@
 
           <div class="status-section">
             <label class="section-label">Reading Status</label>
-            <select class="status-select" [value]="userStatus()" (change)="setStatus($event)">
+            <select class="status-select" (change)="setStatus($event)">
               @for (s of statuses; track s) {
-                <option [value]="s">{{ s }}</option>
+                <option [value]="s" [selected]="s === userStatus()">{{ s }}</option>
               }
             </select>
           </div>
@@ -82,7 +82,7 @@
                   type="number"
                   class="pages-input"
                   [value]="userPagesRead()"
-                  (change)="setPagesRead($event)"
+                  (input)="setPagesRead($event)"
                   min="0"
                   placeholder="0">
                 <span class="pages-sep">of</span>
@@ -90,7 +90,7 @@
                   type="number"
                   class="pages-input"
                   [value]="userTotalPages()"
-                  (change)="setTotalPages($event)"
+                  (input)="setTotalPages($event)"
                   min="0"
                   placeholder="pages">
               </div>
@@ -221,7 +221,7 @@
 
           @if (subjectTimes.length > 0) {
             <section class="info-section">
-              <h2 class="section-title">🕰️ Time Periods</h2>
+              <h2 class="section-title">Time Periods</h2>
               <div class="tag-cloud">
                 @for (time of subjectTimes; track time) {
                   <span class="tag tag-time">{{ time }}</span>
@@ -232,7 +232,7 @@
 
           @if (book().languages?.length > 0) {
             <section class="info-section">
-              <h2 class="section-title">🌍 Available Languages</h2>
+              <h2 class="section-title">Available Languages</h2>
               <div class="tag-cloud">
                 @for (lang of book().languages?.slice(0, 12); track lang) {
                   <span class="tag tag-lang">{{ lang | uppercase }}</span>

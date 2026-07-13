@@ -74,6 +74,11 @@
   font-size: 1.5rem;
 }
 
+.card-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
 .bg-teal { background-color: #34A99D; color: white; }
 .bg-gold { background-color: #E5CB90; color: #2E4A4F; }
 .bg-green { background-color: #d4edda; color: #155724; }
@@ -94,7 +99,7 @@
 }
 
 .card-value {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1.8rem;
   font-weight: 800;
   color: #2E4A4F;

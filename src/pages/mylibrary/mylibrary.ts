@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 import { Library } from '../../services/library';
@@ -11,14 +11,12 @@ import { BookCard } from '../../shared/book-card/book-card';
   templateUrl: './mylibrary.html',
   styleUrl: './mylibrary.css',
 })
-export class Mylibrary implements OnInit {
-
-  books: any[] = [];
+export class Mylibrary {
 
   constructor(private libraryService: Library, private router: Router) {}
 
-  ngOnInit(): void {
-    this.books = this.libraryService.getBooks();
+  get books(): any[] {
+    return this.libraryService.getBooks();
   }
 
   openBook(book: any): void {
@@ -32,6 +30,5 @@ export class Mylibrary implements OnInit {
 
   onStatusChange(index: number, status: string): void {
     this.libraryService.setBookStatus(index, status);
-    this.books = this.libraryService.getBooks();
   }
 }
