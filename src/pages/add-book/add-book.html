@@ -65,6 +65,16 @@
 
         <div class="form-group">
 
+            <label>Total Pages</label>
+
+            <input
+                type="number"
+                formControlName="total_pages">
+
+        </div>
+
+        <div class="form-group">
+
             <label>Status</label>
             <div class="select-wrapper">
                 <select formControlName="status">
@@ -78,50 +88,35 @@
             </div>
             
         </div>
-
         <div class="form-group">
+            <label>Book PDF (optional)</label>
 
-            <label>Rating</label>
-
-           <div class="rating-container">
-
-            <span
-                *ngFor="let star of [1,2,3,4,5]"
-                (click)="bookForm.patchValue({rating: star})"
-                [class.active]="star <= bookForm.value.rating">
-
-                ★
-
-            </span>
-
+            <div class="flex items-center justify-center p-5 border-2 border-dashed border-[#E5CB90] rounded-[10px] bg-[#FFFDF9] cursor-pointer transition-all duration-200 ease-in-out min-h-[80px] text-center hover:border-[#34A99D] hover:bg-[#FAF7F0] hover:shadow-[0_4px_12px_rgba(52,169,157,0.08)]" (click)="pdfInput.click()">
+                @if (selectedPdfFile) {
+                <span class="text-[#2e4a4f] font-semibold text-[0.95rem]">{{ selectedPdfFile.name }}</span>
+                } @else {
+                <span class="text-gray-400 font-medium text-[0.95rem]">Click to upload a PDF file</span>
+                }
             </div>
-            <span class="rating-text">
-                {{bookForm.value.rating}} / 5
-            </span>
 
-        </div>
+            <input
+                #pdfInput
+                type="file"
+                accept=".pdf"
+                style="display: none"
+                (change)="onPdfSelected($event)">
 
-        <div class="form-group">
+            @if (pdfUploadStatus === 'uploading') {
+                <p class="mt-2 text-[0.8rem] font-semibold text-center text-[#34A99D] animate-pulse">Uploading PDF...</p>
+            }
+            @if (pdfUploadStatus === 'done') {
+                <p class="mt-2 text-[0.8rem] font-semibold text-center text-[#2B8D84]">PDF uploaded!</p>
+            }
+            @if (pdfUploadStatus === 'error') {
+                <p class="mt-2 text-[0.8rem] font-semibold text-center text-red-500">PDF upload failed. Book was still saved.</p>
+            }
+            </div>
 
-            <label>Description</label>
-
-            <textarea
-                rows="4"
-                formControlName="description">
-            </textarea>
-
-        </div>
-
-        <div class="form-group">
-
-            <label>Notes</label>
-
-            <textarea
-                rows="3"
-                formControlName="notes">
-            </textarea>
-
-        </div>
 
         <button type="submit">
 
@@ -186,43 +181,11 @@
 
         <div class="info-row py-4 flex justify-between">
 
-            <span class="label">Rating</span>
+            <span class="label">Total Pages</span>
 
-            <span class="rating-stars">
-
-                <span
-                    *ngFor="let star of [1,2,3,4,5]"
-                    [class.filled]="star <= bookForm.value.rating">
-
-                    ★
-
-                </span>
-
+            <span>
+                {{ bookForm.value.total_pages || 'Unknown' }}
             </span>
-
-        </div>
-
-        <div class="description mt-5 ">
-
-            <h4 class="mb-2">Description</h4>
-
-            <p class="text-area overflow-y-auto">
-
-                {{ bookForm.value.description || 'Add a description to see it here.' }}
-
-            </p>
-
-        </div>
-
-        <div class="notes-box mt-6 p-4 rounded-xl">
-
-            <h4 >Personal Notes</h4>
-
-            <p class="text-area overflow-y-auto">
-
-                {{ bookForm.value.notes || 'No notes added yet.' }}
-
-            </p>
 
         </div>
 

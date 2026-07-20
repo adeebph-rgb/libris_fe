@@ -28,6 +28,7 @@ export class Settings implements OnInit {
     const user = this.authService.currentUser();
     this.profileForm = this.fb.group({
       name: [user?.name || '', [Validators.required]],
+      email: [user?.email || '', [Validators.required, Validators.email]],
       yearlyGoal: [user?.yearlyGoal || 10, [Validators.required, Validators.min(1)]]
     });
   }
@@ -36,9 +37,16 @@ export class Settings implements OnInit {
     if (this.profileForm.invalid) {
       return;
     }
-    const { name, yearlyGoal } = this.profileForm.value;
-    this.authService.updateProfile({ name, yearlyGoal });
-    this.showFeedback('Settings saved successfully!', false);
+    const { name, email, yearlyGoal } = this.profileForm.value;
+    this.authService.updateProfile({ name, email, yearlyGoal }).subscribe({
+      next: () => {
+        this.showFeedback('Settings saved successfully!', false);
+      },
+      error: (err) => {
+        const errorDetail = err?.error?.detail || 'Failed to save settings.';
+        this.showFeedback(errorDetail, true);
+      }
+    });
   }
 
   clearLibrary(): void {
@@ -46,17 +54,20 @@ export class Settings implements OnInit {
       this.showFeedback('Please type DELETE to confirm.', true);
       return;
     }
-    localStorage.removeItem('books');
-    this.libraryService.books = [];
-    this.showClearModal.set(false);
-    this.clearConfirmText = '';
-    this.showFeedback('All library data has been cleared.', false);
+    this.libraryService.clearAllBooks().subscribe({
+      next: () => {
+        this.showClearModal.set(false);
+        this.clearConfirmText = '';
+        this.showFeedback('All library data has been cleared.', false);
+      },
+      error: () => this.showFeedback('Failed to clear library.', true)
+    });
   }
 
 
   private showFeedback(msg: string, isError: boolean): void {
     this.feedbackMsg.set(msg);
     this.isError.set(isError);
-    setTimeout(() => this.feedbackMsg.set(''), 3000);
+    setTimeout(() => this.feedbackMsg.set(''), 2000);
   }
 }

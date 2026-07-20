@@ -40,19 +40,31 @@
       </div>
     } @else {
       @for (category of categories(); track category.name) {
-        <section class="mb-10">
+        <section class="category-section mb-10">
           <h2 class="text-2xl font-bold mb-4 font-['Cormorant_Garamond',serif] border-l-4 pl-3 category-heading">
             {{ category.name }}
           </h2>
-          <div class="discover-row">
-            @for (book of category.books; track book.key) {
-              <app-book-card
-                [book]="book"
-                [inLibrary]="isInLibrary(book)"
-                (addToLibrary)="addBook(book)"
-                (bookClick)="openBook($event)">
-              </app-book-card>
-            }
+          <div class="carousel-track-wrapper">
+            <button class="carousel-arrow carousel-arrow-left" (click)="scrollRow(rowEl, -1)">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/>
+              </svg>
+            </button>
+            <div class="discover-row" #rowEl>
+              @for (book of category.books; track book.key) {
+                <app-book-card
+                  [book]="book"
+                  [inLibrary]="isInLibrary(book)"
+                  (addToLibrary)="addBook(book)"
+                  (bookClick)="openBook($event)">
+                </app-book-card>
+              }
+            </div>
+            <button class="carousel-arrow carousel-arrow-right" (click)="scrollRow(rowEl, 1)">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+              </svg>
+            </button>
           </div>
         </section>
       }

@@ -14,6 +14,9 @@ import { AuthService } from '../../services/auth';
 export class Login {
   isLoginMode = signal(true);
   errorMsg = signal('');
+  successMsg = signal('');
+  showLoginPassword = signal(false);
+  showSignupPassword = signal(false);
   loginForm: FormGroup;
   signupForm: FormGroup;
 
@@ -37,6 +40,7 @@ export class Login {
   toggleMode(): void {
     this.isLoginMode.set(!this.isLoginMode());
     this.errorMsg.set('');
+    this.successMsg.set('');
   }
 
   onLogin(): void {
@@ -44,12 +48,10 @@ export class Login {
       return;
     }
     const { name, password } = this.loginForm.value;
-    const success = this.authService.login(name, password);
-    if (success) {
-      this.router.navigate(['/library']);
-    } else {
-      this.errorMsg.set('Invalid username or password');
-    }
+    this.authService.login(name, password).subscribe({
+      next: () => this.router.navigate(['/library']),
+      error: () => this.errorMsg.set('Invalid username or password')
+    });
   }
 
   onSignup(): void {
@@ -57,11 +59,13 @@ export class Login {
       return;
     }
     const { name, email, password } = this.signupForm.value;
-    const success = this.authService.signup(name, email, password);
-    if (success) {
-      this.router.navigate(['/library']);
-    } else {
-      this.errorMsg.set('Username is already registered');
-    }
+    this.authService.signup(name, email, password).subscribe({
+      next: () => {
+        this.signupForm.reset();
+        this.isLoginMode.set(true);
+        this.successMsg.set('Account created! Please sign in.');
+      },
+      error: () => this.errorMsg.set('Username is already registered')
+    });
   }
 }

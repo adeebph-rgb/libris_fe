@@ -3,12 +3,6 @@
     <h1 class="page-title">Settings</h1>
   </div>
 
-  @if (feedbackMsg()) {
-    <div class="feedback-banner" [class.error-banner]="isError()">
-      {{ feedbackMsg() }}
-    </div>
-  }
-
   <div class="settings-sections-grid">
     <div class="settings-card">
       <h3 class="card-title">Profile & Preferences</h3>
@@ -19,12 +13,17 @@
         </div>
 
         <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" formControlName="email" />
+        </div>
+
+        <div class="form-group">
           <label>Yearly Reading Goal (books)</label>
           <input type="number" formControlName="yearlyGoal" min="1" />
         </div>
 
         <button type="submit" [disabled]="profileForm.invalid" class="btn-save">
-          Save Settings
+          Save
         </button>
       </form>
     </div>
@@ -52,6 +51,12 @@
           <button (click)="clearLibrary()" class="btn-modal btn-confirm">Clear Database</button>
         </div>
       </div>
+    </div>
+  }
+
+  @if (feedbackMsg()) {
+    <div class="toast-notification" [class.error-toast]="isError()">
+      {{ feedbackMsg() }}
     </div>
   }
 </div>

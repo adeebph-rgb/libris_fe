@@ -42,22 +42,29 @@ export class Discover implements OnInit {
   ) {}
 
   ngOnInit(): void {
+    this.library.loadBooks().subscribe();
     this.loadCategories();
   }
 
   isInLibrary(book: Book): boolean {
-    return this.library.getBooks().some(b => b.key === book.key);
+    return this.library.books().some(b => b.key === book.key);
   }
 
   addBook(book: Book): void {
     if (!this.isInLibrary(book)) {
-      this.library.addBook({ ...book, rating: 0, status: 'Want to Read' });
+      this.library.addBook(book).subscribe({
+        error: (err) => console.error('Failed to add book:', err)
+      });
     }
   }
 
   openBook(book: Book): void {
     const keySlug = book.key.replace('/works/', '');
     this.router.navigate(['/book', keySlug], { state: { book } });
+  }
+
+  scrollRow(el: HTMLElement, direction: 1 | -1): void {
+    el.scrollBy({ left: direction * 600, behavior: 'smooth' });
   }
 
   onSearch(query: string): void {

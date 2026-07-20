@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 import { Library } from '../../services/library';
@@ -11,12 +11,16 @@ import { BookCard } from '../../shared/book-card/book-card';
   templateUrl: './mylibrary.html',
   styleUrl: './mylibrary.css',
 })
-export class Mylibrary {
+export class Mylibrary implements OnInit {
 
-  constructor(private libraryService: Library, private router: Router) {}
+  constructor(public library: Library, private router: Router) {}
+
+  ngOnInit(): void {
+    this.library.loadBooks().subscribe();
+  }
 
   get books(): any[] {
-    return this.libraryService.getBooks();
+    return this.library.books();
   }
 
   openBook(book: any): void {
@@ -24,11 +28,21 @@ export class Mylibrary {
     this.router.navigate(['/book', keySlug], { state: { book } });
   }
 
-  onRatingChange(index: number, rating: number): void {
-    this.libraryService.updateBook(index, { rating });
+  onRatingChange(book: any, rating: number): void {
+    this.library.updateBook(book.id, { rating }).subscribe({
+      error: (err) => console.error('Failed to update rating:', err)
+    });
   }
 
-  onStatusChange(index: number, status: string): void {
-    this.libraryService.setBookStatus(index, status);
+  onStatusChange(book: any, status: string): void {
+    this.library.setBookStatus(book.id, status).subscribe({
+      error: (err) => console.error('Failed to update status:', err)
+    });
+  }
+
+  onDeleteBook(book: any): void {
+    this.library.deleteBook(book.id).subscribe({
+      error: (err) => console.error('Failed to delete book:', err)
+    });
   }
 }

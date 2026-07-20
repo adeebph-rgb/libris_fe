@@ -1,0 +1,69 @@
+<div class="reader-page">
+
+  @if (loading()) {
+    <div class="reader-loading">
+      <div class="spinner-large"></div>
+      <p>Loading PDF...</p>
+    </div>
+  }
+
+  @else if (error()) {
+    <div class="reader-error">
+      <p>{{ error() }}</p>
+      <button class="px-4 py-2 border border-[rgba(232,213,176,0.2)] rounded-md text-[#e8d5b0] text-[0.85rem] font-semibold bg-[rgba(232,213,176,0.05)] cursor-pointer hover:bg-[rgba(232,213,176,0.15)] hover:border-[rgba(232,213,176,0.45)] hover:text-white active:scale-95 transition-all duration-200" (click)="goBack()">Go Back</button>
+    </div>
+  }
+
+  @else {
+    @if (!isFullscreen()) {
+      <div class="reader-topbar">
+        <button class="px-4 py-2 border border-[rgba(232,213,176,0.2)] rounded-md text-[#e8d5b0] text-[0.85rem] font-semibold bg-[rgba(232,213,176,0.05)] cursor-pointer hover:bg-[rgba(232,213,176,0.15)] hover:border-[rgba(232,213,176,0.45)] hover:text-white active:scale-95 transition-all duration-200" (click)="goBack()">
+          <span>Back</span>
+        </button>
+        <h1 class="reader-title">{{ bookTitle() }}</h1>
+        <div class="topbar-right">
+          <span class="page-count">{{ currentPage() }} / {{ totalPages() }}</span>
+        </div>
+      </div>
+    }
+
+    <div class="canvas-wrapper">
+      <canvas #pdfCanvas></canvas>
+    </div>
+
+    <div class="reader-controls">
+      <button class="px-4 py-1.5 border border-[rgba(232,213,176,0.2)] rounded-md text-[#e8d5b0] text-[0.85rem] font-semibold bg-[rgba(232,213,176,0.05)] cursor-pointer hover:bg-[rgba(232,213,176,0.15)] hover:border-[rgba(232,213,176,0.45)] hover:text-white active:scale-95 disabled:opacity-30 disabled:cursor-not-allowed disabled:hover:bg-[rgba(232,213,176,0.05)] disabled:hover:border-[rgba(232,213,176,0.2)] disabled:hover:text-[#e8d5b0] disabled:active:scale-100 transition-all duration-200" (click)="prevPage()" [disabled]="currentPage() === 1">
+        Prev
+      </button>
+
+      <div class="page-jump">
+        <span>Page</span>
+        <input
+          type="number"
+          [value]="currentPage()"
+          [min]="1"
+          [max]="totalPages()"
+          (change)="jumpToPage($event)">
+        <span>of {{ totalPages() }}</span>
+      </div>
+
+      <button class="px-4 py-1.5 border border-[rgba(232,213,176,0.2)] rounded-md text-[#e8d5b0] text-[0.85rem] font-semibold bg-[rgba(232,213,176,0.05)] cursor-pointer hover:bg-[rgba(232,213,176,0.15)] hover:border-[rgba(232,213,176,0.45)] hover:text-white active:scale-95 disabled:opacity-30 disabled:cursor-not-allowed disabled:hover:bg-[rgba(232,213,176,0.05)] disabled:hover:border-[rgba(232,213,176,0.2)] disabled:hover:text-[#e8d5b0] disabled:active:scale-100 transition-all duration-200" (click)="nextPage()" [disabled]="currentPage() === totalPages()">
+        Next 
+      </button>
+
+      <div class="relative flex items-center group">
+        <button class="p-2 border border-transparent rounded-md text-[#e8d5b0] hover:bg-[rgba(232,213,176,0.15)] hover:text-white active:scale-95 transition-all duration-200 cursor-pointer flex items-center justify-center" (click)="toggleFullscreen()">
+          @if (isFullscreen()) {
+            <span class="material-icons text-[1.25rem] leading-none">fullscreen_exit</span>
+          } @else {
+            <span class="material-icons text-[1.25rem] leading-none">fullscreen</span>
+          }
+        </button>
+        <span class="absolute bottom-[140%] left-1/2 -translate-x-1/2 invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-200 bg-[#2e2314] text-[#e8d5b0] border border-[rgba(232,213,176,0.35)] text-[0.75rem] font-semibold px-2.5 py-1.5 rounded-md shadow-[0_4px_12px_rgba(0,0,0,0.4)] whitespace-nowrap z-50">
+          {{ isFullscreen() ? 'Exit Fullscreen' : 'Fullscreen' }}
+        </span>
+      </div>
+    </div>
+  }
+
+</div>

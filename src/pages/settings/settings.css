@@ -22,22 +22,31 @@
   margin: 0.4rem 0 0;
 }
 
-.feedback-banner {
-  background: #d4edda;
-  border: 1px solid #c3e6cb;
-  color: #155724;
-  padding: 0.75rem 1.25rem;
-  border-radius: 8px;
-  margin-bottom: 2rem;
+.toast-notification {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 1001;
+  background: #2E4A4F;
+  color: #E5CB90;
+  border: 2px solid #E5CB90;
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
   font-size: 0.9rem;
-  text-align: center;
-  font-weight: 600;
+  font-weight: 700;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  animation: settingsFadeInUp 0.3s ease forwards;
 }
 
-.feedback-banner.error-banner {
-  background: #f8d7da;
-  border-color: #f5c6cb;
-  color: #721c24;
+.toast-notification.error-toast {
+  background: #dc3545;
+  color: white;
+  border-color: #ff8b94;
+}
+
+@keyframes settingsFadeInUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 .settings-sections-grid {

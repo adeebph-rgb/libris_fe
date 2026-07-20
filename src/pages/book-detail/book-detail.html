@@ -1,250 +1,324 @@
-
-<div class="detail-page">
-
+<div class="min-h-screen detail-page">
 
   @if (loading()) {
-    <div class="loading-screen">
+    <div class="flex flex-col items-center justify-center min-h-[60vh] gap-4 loading-screen">
       <div class="spinner-large"></div>
       <p>Loading book...</p>
     </div>
   }
 
-
   @else if (error()) {
-    <div class="error-screen">
-      <span class="error-icon">📚</span>
+    <div class="flex flex-col items-center justify-center min-h-[60vh] gap-4 error-screen">
+      <span class="error-icon text-[3.5rem]">📚</span>
       <p>{{ error() }}</p>
-      <button class="btn-back" (click)="goBack()">← Back to Discover</button>
+      <button class="px-4 py-2 border border-[#E5CB90]/60 rounded-md text-[#FFF3C8] text-[0.85rem] font-semibold bg-white/10 cursor-pointer hover:bg-[#E5CB90] hover:text-[#2E4A4F] hover:border-[#E5CB90] active:scale-95 transition-all duration-200" (click)="goBack()">
+        <span>Back to Discover</span>
+      </button>
     </div>
   }
 
-
   @else if (book()) {
 
-    <div class="content-wrapper">
-      <div class="top-bar">
-        <button class="btn-back-hero" (click)="goBack()">← Back</button>
+    <div class="flex flex-col gap-6 max-w-[1100px] mx-auto px-6 pb-12 items-start content-wrapper">
+      <div class="pt-5 px-7 pb-0 top-bar">
+        <button class="px-4 py-2 border border-[#E5CB90]/60 rounded-md text-[#FFF3C8] text-[0.85rem] font-semibold bg-white/10 cursor-pointer hover:bg-[#E5CB90] hover:text-[#2E4A4F] hover:border-[#E5CB90] active:scale-95 transition-all duration-200" (click)="goBack()">
+          <span>Back</span>
+        </button>
       </div>
 
-      <div class="content-row">
-      <aside class="sidebar">
+      <div class="flex flex-col md:flex-row gap-6 md:gap-8 items-start w-full content-row">
+        <aside class="flex-none w-full md:w-[240px] flex flex-row flex-wrap md:flex-col md:flex-nowrap gap-4 max-[480px]:flex-col max-[480px]:items-center sidebar">
 
-
-        <div class="cover-card">
-          @if (coverLarge) {
-            <img class="cover-img" [src]="coverLarge" [alt]="book().title" />
-          } @else {
-            <div class="no-cover-large">
-              <span class="book-icon">📖</span>
-              <p>{{ book().title }}</p>
-            </div>
-          }
-        </div>
-
-        <div class="action-card">
-          @if (!inLibrary()) {
-            <button class="btn-add-library" (click)="addToLibrary()">
-              + Add to Library
-            </button>
-          } @else {
-            <div class="in-library-badge">
-              <span>✓ In Your Library</span>
-            </div>
-          }
-
-
-          <div class="rating-section">
-            <label class="section-label">Your Rating</label>
-            <div class="stars">
-              @for (star of [1,2,3,4,5]; track star) {
-                <span
-                  class="star"
-                  [class.filled]="star <= userRating()"
-                  (click)="setRating(star)">★</span>
-              }
-            </div>
-          </div>
-
-          <div class="status-section">
-            <label class="section-label">Reading Status</label>
-            <select class="status-select" (change)="setStatus($event)">
-              @for (s of statuses; track s) {
-                <option [value]="s" [selected]="s === userStatus()">{{ s }}</option>
-              }
-            </select>
-          </div>
-
-          <div class="pages-section">
-            <label class="section-label">Reading Progress</label>
-            @if (showPagesInput()) {
-              <div class="pages-inputs">
-                <input
-                  type="number"
-                  class="pages-input"
-                  [value]="userPagesRead()"
-                  (input)="setPagesRead($event)"
-                  min="0"
-                  placeholder="0">
-                <span class="pages-sep">of</span>
-                <input
-                  type="number"
-                  class="pages-input"
-                  [value]="userTotalPages()"
-                  (input)="setTotalPages($event)"
-                  min="0"
-                  placeholder="pages">
+          <div class="rounded-[14px] overflow-hidden aspect-[2/3] md:w-full w-[140px] max-[480px]:w-[180px] shrink-0 cover-card">
+            @if (coverLarge) {
+              <img class="w-full h-full object-cover block cover-img" [src]="coverLarge" [alt]="book().title" />
+            } @else {
+              <div class="w-full h-full flex flex-col items-center justify-center gap-3 p-4 text-center no-cover-large">
+                <span class="text-[3rem] book-icon">📖</span>
+                <p class="text-[0.9rem] leading-[1.4] font-serif">{{ book().title }}</p>
               </div>
-              @if (userTotalPages() > 0) {
-                <div class="detail-progress-track">
-                  <div class="detail-progress-fill" [style.width.%]="progressPercent()"></div>
-                </div>
-                <div class="progress-meta">
-                  <span>{{ progressPercent() }}% complete</span>
-                  @if (readingTimeEstimate()) {
-                    <span class="time-est">⏳ {{ readingTimeEstimate() }} left</span>
+            }
+          </div>
+
+          <div class="rounded-[14px] p-5 flex flex-col gap-[0.9rem] md:flex-none flex-1 min-w-[200px] max-[480px]:w-full action-card">
+            @if (!inLibrary()) {
+              <button class="w-full py-[0.65rem] px-4 rounded-lg text-[0.9rem] font-bold cursor-pointer transition-all duration-200 tracking-wide btn-add-library" (click)="addToLibrary()">
+                + Add to Library
+              </button>
+            } @else {
+              <div class="text-center py-2.5 px-4 rounded-lg font-bold text-[0.85rem] tracking-wider in-library-badge">
+                <span>✓ In Your Library</span>
+              </div>
+            }
+            @if (inLibrary()) {
+              @if (hasPdf()) {
+                <button
+                  class="w-full py-[0.65rem] px-4 rounded-lg text-[0.9rem] font-bold cursor-pointer
+                        transition-all duration-200 tracking-wide btn-read-book"
+                  (click)="openReader()">
+                  Read Book
+                </button>
+              } @else {
+                <button
+                  class="w-full py-[0.65rem] px-4 rounded-lg text-[0.9rem] font-bold cursor-pointer
+                        transition-all duration-200 tracking-wide btn-add-pdf"
+                  (click)="pdfInput.click()">
+                  Upload PDF Book
+                </button>
+                <input
+                  #pdfInput
+                  type="file"
+                  accept=".pdf"
+                  style="display: none"
+                  (change)="onPdfSelected($event)">
+                @if (pdfUploadStatus() === 'uploading') {
+                  <p class="text-xs text-center text-[#34A99D] font-semibold mt-1 animate-pulse">⏳ Uploading PDF...</p>
+                }
+                @if (pdfUploadStatus() === 'error') {
+                  <p class="text-xs text-center text-red-500 font-semibold mt-1">❌ Upload failed. Try again.</p>
+                }
+              }
+            }
+            
+
+            @if (inLibrary()) {
+              <div class="flex flex-col gap-[0.35rem] rating-section">
+                <label class="text-[0.7rem] font-bold uppercase tracking-widest section-label">Your Rating</label>
+                <div class="flex gap-[2px] stars">
+                  @for (star of [1,2,3,4,5]; track star) {
+                    <span
+                      class="text-[1.5rem] cursor-pointer transition-all duration-150 hover:scale-125 leading-none star"
+                      [class.filled]="star <= userRating()"
+                      (click)="setRating(star)">★</span>
                   }
                 </div>
+              </div>
+            }
+
+            @if (inLibrary()) {
+              <div class="flex flex-col gap-[0.35rem] status-section">
+                <label class="text-[0.7rem] font-bold uppercase tracking-widest section-label">Reading Status</label>
+                <div class="status-select-wrapper">
+                  <select class="border-0 rounded-lg py-2 pl-3 pr-8 text-[0.85rem] cursor-pointer outline-none w-full font-semibold appearance-none status-select" (change)="setStatus($event)">
+                    @for (s of statuses; track s) {
+                      <option [value]="s" [selected]="s === userStatus()">{{ s }}</option>
+                    }
+                  </select>
+                  <span class="status-select-arrow">▼</span>
+                </div>
+              </div>
+            }
+
+            @if (inLibrary()) {
+              <div class="flex flex-col gap-[0.4rem] pages-section">
+                <label class="text-[0.7rem] font-bold uppercase tracking-widest section-label">Reading Progress</label>
+                @if (showPagesInput()) {
+                  <div class="flex items-center gap-[0.4rem] pages-inputs">
+                    <input
+                      type="number"
+                      class="flex-1 min-w-0 border-[1.5px] rounded-md py-[0.3rem] px-2 text-[0.8rem] outline-none text-center font-semibold w-0 pages-input"
+                      [value]="userPagesRead()"
+                      (input)="setPagesRead($event)"
+                      min="0"
+                      placeholder="0">
+                    <span class="text-[0.75rem] shrink-0 pages-sep">of</span>
+                    <input
+                      type="number"
+                      class="flex-1 min-w-0 border-[1.5px] rounded-md py-[0.3rem] px-2 text-[0.8rem] outline-none text-center font-semibold w-0 pages-input"
+                      [value]="userTotalPages()"
+                      (input)="setTotalPages($event)"
+                      min="0"
+                      placeholder="pages">
+                  </div>
+                  @if (userTotalPages() > 0) {
+                    <div class="h-[6px] rounded-full overflow-hidden mt-[2px] detail-progress-track">
+                      <div class="h-full rounded-full transition-all duration-400 detail-progress-fill" [style.width.%]="progressPercent()"></div>
+                    </div>
+                    <div class="flex justify-between text-[0.7rem] progress-meta">
+                      <span>{{ progressPercent() }}% complete</span>
+                      @if (readingTimeEstimate()) {
+                        <span class="font-semibold time-est">⏳ {{ readingTimeEstimate() }} left</span>
+                      }
+                    </div>
+                  }
+                } @else {
+                  <button class="w-full bg-transparent border-[1.5px] border-dashed py-[0.45rem] px-3 rounded-lg text-[0.8rem] font-semibold cursor-pointer transition-all duration-200 btn-track-pages" (click)="showPagesInput.set(true)">+ Track Pages</button>
+                }
+              </div>
+            }
+
+            @if (userDateStarted() || userDateFinished()) {
+              <div class="rounded-[10px] py-[0.65rem] px-3 flex flex-col gap-[0.4rem] dates-section">
+                @if (userDateStarted()) {
+                  <div class="flex items-center gap-[0.4rem] text-[0.78rem] date-row">
+                    <span class="text-[0.85rem] shrink-0 date-icon">📅</span>
+                    <span class="flex-1 date-label">Started</span>
+                    <span class="font-bold date-value">{{ userDateStarted() | date:'MMM d, y' }}</span>
+                  </div>
+                }
+                @if (userDateFinished()) {
+                  <div class="flex items-center gap-[0.4rem] text-[0.78rem] date-row">
+                    <span class="text-[0.85rem] shrink-0 date-icon">✅</span>
+                    <span class="flex-1 date-label">Finished</span>
+                    <span class="font-bold date-value">{{ userDateFinished() | date:'MMM d, y' }}</span>
+                  </div>
+                }
+                @if (userDateStarted() && userDateFinished()) {
+                  <div class="flex items-center gap-[0.4rem] text-[0.78rem] highlight-row date-row">
+                    <span class="text-[0.85rem] shrink-0 date-icon">⏱️</span>
+                    <span class="flex-1 date-label">Read in</span>
+                    <span class="font-bold date-value">{{ daysToRead() }} days</span>
+                  </div>
+                }
+              </div>
+            }
+
+            @if (!inLibrary()) {
+              @if (canBorrow) {
+                <a class="block text-center py-2 px-4 rounded-lg text-[0.8rem] font-semibold no-underline transition-all duration-200 btn-borrow" [href]="borrowUrl" target="_blank" rel="noopener">
+                  Read / Borrow Online
+                </a>
+              } @else {
+                <a class="block text-center py-2 px-4 rounded-lg text-[0.8rem] font-semibold no-underline transition-all duration-200 btn-open-library" [href]="openLibraryUrl" target="_blank" rel="noopener">
+                  View on Open Library ↗
+                </a>
               }
-            } @else {
-              <button class="btn-track-pages" (click)="showPagesInput.set(true)">+ Track Pages</button>
             }
           </div>
 
-          @if (userDateStarted() || userDateFinished()) {
-            <div class="dates-section">
-              @if (userDateStarted()) {
-                <div class="date-row">
-                  <span class="date-icon">📅</span>
-                  <span class="date-label">Started</span>
-                  <span class="date-value">{{ userDateStarted() | date:'MMM d, y' }}</span>
-                </div>
+          @if (justAdded()) {
+            <div class="text-center py-[0.65rem] px-4 rounded-[10px] font-bold text-[0.85rem] toast">✓ Added to your library!</div>
+          }
+
+        </aside>
+
+        <main class="flex-1 min-w-0 pt-0 md:pt-20 main-info">
+
+          <div class="title-section">
+            @if (book().seriesName) {
+              <p class="text-[0.8rem] font-bold uppercase tracking-widest mb-[0.4rem] series-tag">{{ book().seriesName }}
+                @if (book().seriesPosition) {
+                  · Book {{ book().seriesPosition }}
+                }
+              </p>
+            }
+            <h1 class="font-serif text-[1.8rem] md:text-[2.4rem] font-extrabold leading-[1.15] mt-0 mx-0 mb-2 book-title">{{ book().title }}</h1>
+            <p class="text-[1.1rem] mb-4 book-authors">by {{ book().authors?.join(', ') }}</p>
+
+            <div class="flex flex-wrap gap-2 mt-2 meta-chips">
+              @if (book().year) {
+                <span class="py-[0.3rem] px-3 rounded-full text-[0.78rem] font-semibold chip chip-year">📅 {{ book().year }}</span>
               }
-              @if (userDateFinished()) {
-                <div class="date-row">
-                  <span class="date-icon">✅</span>
-                  <span class="date-label">Finished</span>
-                  <span class="date-value">{{ userDateFinished() | date:'MMM d, y' }}</span>
-                </div>
-              }
-              @if (userDateStarted() && userDateFinished()) {
-                <div class="date-row highlight-row">
-                  <span class="date-icon">⏱️</span>
-                  <span class="date-label">Read in</span>
-                  <span class="date-value">{{ daysToRead() }} days</span>
-                </div>
+              @if (book().editionCount) {
+                <span class="py-[0.3rem] px-3 rounded-full text-[0.78rem] font-semibold chip chip-editions">📚 {{ book().editionCount }} editions</span>
               }
             </div>
-          }
+          </div>
 
-          @if (canBorrow) {
-            <a class="btn-borrow" [href]="borrowUrl" target="_blank" rel="noopener">
-              📖 Read / Borrow Online
-            </a>
+          <hr class="border-0 border-t-2 my-6 divider" />
+
+          @if (detailsLoading()) {
+            <div class="flex flex-col gap-3 details-loading">
+              <div class="h-[14px] rounded-md shimmer-line"></div>
+              <div class="h-[14px] rounded-md w-3/5 shimmer-line"></div>
+              <div class="h-[14px] rounded-md shimmer-line"></div>
+              <div class="h-[14px] rounded-md w-3/5 shimmer-line"></div>
+            </div>
           } @else {
-            <a class="btn-open-library" [href]="openLibraryUrl" target="_blank" rel="noopener">
-              View on Open Library ↗
-            </a>
-          }
-        </div>
-
-
-
-        @if (justAdded()) {
-          <div class="toast">✓ Added to your library!</div>
-        }
-
-      </aside>
-
-
-      <main class="main-info">
-
-        <div class="title-section">
-          @if (book().seriesName) {
-            <p class="series-tag">{{ book().seriesName }}
-              @if (book().seriesPosition) {
-                · Book {{ book().seriesPosition }}
-              }
-            </p>
-          }
-          <h1 class="book-title">{{ book().title }}</h1>
-          <p class="book-authors">by {{ book().authors?.join(', ') }}</p>
-
-
-          <div class="meta-chips">
-            @if (book().year) {
-              <span class="chip chip-year">📅 {{ book().year }}</span>
+            @if (description) {
+              <section class="mb-7 info-section">
+                <h2 class="font-serif text-[1.15rem] font-bold mb-[0.65rem] border-l-[3px] pl-[0.6rem] section-title">About this Book</h2>
+                <p class="text-[0.97rem] leading-[1.75] whitespace-pre-line description-text">{{ description }}</p>
+              </section>
             }
-            @if (book().editionCount) {
-              <span class="chip chip-editions">📚 {{ book().editionCount }} editions</span>
+
+            @if (firstSentence) {
+              <section class="mb-7 info-section">
+                <h2 class="font-serif text-[1.15rem] font-bold mb-[0.65rem] border-l-[3px] pl-[0.6rem] section-title">First Line</h2>
+                <blockquote class="border-l-4 py-3 px-4 m-0 rounded-r-lg italic text-[1rem] leading-[1.65] first-sentence">
+                  "{{ firstSentence }}"
+                </blockquote>
+              </section>
             }
-          </div>
-        </div>
 
-        <hr class="divider" />
+            @if (subjects.length > 0) {
+              <section class="mb-7 info-section">
+                <h2 class="font-serif text-[1.15rem] font-bold mb-[0.65rem] border-l-[3px] pl-[0.6rem] section-title">Genres & Subjects</h2>
+                <div class="flex flex-wrap gap-[0.45rem] tag-cloud">
+                  @for (subject of subjects; track subject) {
+                    <span class="py-[0.3rem] px-[0.7rem] border-[1.5px] rounded-full text-[0.78rem] font-medium transition-all duration-150 cursor-default tag">{{ subject }}</span>
+                  }
+                </div>
+              </section>
+            }
 
-        @if (detailsLoading()) {
-          <div class="details-loading">
-            <div class="shimmer-line"></div>
-            <div class="shimmer-line short"></div>
-            <div class="shimmer-line"></div>
-            <div class="shimmer-line short"></div>
-          </div>
-        } @else {
-          @if (description) {
-            <section class="info-section">
-              <h2 class="section-title">About this Book</h2>
-              <p class="description-text">{{ description }}</p>
-            </section>
-          }
+            @if (subjectTimes.length > 0) {
+              <section class="mb-7 info-section">
+                <h2 class="font-serif text-[1.15rem] font-bold mb-[0.65rem] border-l-[3px] pl-[0.6rem] section-title">Time Periods</h2>
+                <div class="flex flex-wrap gap-[0.45rem] tag-cloud">
+                  @for (time of subjectTimes; track time) {
+                    <span class="py-[0.3rem] px-[0.7rem] border-[1.5px] rounded-full text-[0.78rem] font-medium transition-all duration-150 cursor-default tag tag-time">{{ time }}</span>
+                  }
+                </div>
+              </section>
+            }
 
-          @if (firstSentence) {
-            <section class="info-section">
-              <h2 class="section-title">First Line</h2>
-              <blockquote class="first-sentence">
-                "{{ firstSentence }}"
-              </blockquote>
-            </section>
-          }
+            @if (book().languages?.length > 0) {
+              <section class="mb-7 info-section">
+                <h2 class="font-serif text-[1.15rem] font-bold mb-[0.65rem] border-l-[3px] pl-[0.6rem] section-title">Available Languages</h2>
+                <div class="flex flex-wrap gap-[0.45rem] tag-cloud">
+                  @for (lang of book().languages?.slice(0, 12); track lang) {
+                    <span class="py-[0.3rem] px-[0.7rem] border-[1.5px] rounded-full text-[0.78rem] font-medium transition-all duration-150 cursor-default tag tag-lang">{{ lang | uppercase }}</span>
+                  }
+                  @if (book().languages?.length > 12) {
+                    <span class="py-[0.3rem] px-[0.7rem] border-[1.5px] rounded-full text-[0.78rem] font-medium transition-all duration-150 cursor-default tag tag-more">+{{ book().languages.length - 12 }} more</span>
+                  }
+                </div>
+              </section>
+            }
 
+            @if (inLibrary()) {
+              <section class="mb-7 info-section w-full">
+                <h2 class="font-serif text-[1.15rem] font-bold mb-[0.65rem] border-l-[3px] pl-[0.6rem] section-title">Personal Notes</h2>
 
-          @if (subjects.length > 0) {
-            <section class="info-section">
-              <h2 class="section-title">Genres & Subjects</h2>
-              <div class="tag-cloud">
-                @for (subject of subjects; track subject) {
-                  <span class="tag">{{ subject }}</span>
+                @if (userNotes() && !isEditingNotes()) {
+                  <div class="notes-display-card p-5 rounded-xl border-[1.5px]">
+                    <p class="text-[0.95rem] leading-[1.7] whitespace-pre-line notes-display-text">{{ userNotes() }}</p>
+                    <div class="flex justify-end mt-3">
+                      <button
+                        class="px-3 py-1.5 rounded-lg text-xs font-bold cursor-pointer btn-edit-notes transition-all duration-200"
+                        (click)="isEditingNotes.set(true)">
+                        Edit Note
+                      </button>
+                    </div>
+                  </div>
+                } @else {
+                  <textarea
+                    #notesArea
+                    class="w-full rounded-xl p-4 text-[0.95rem] outline-none notes-textarea border-[1.5px]"
+                    rows="4"
+                    [value]="userNotes()"
+                    placeholder="Write your thoughts, quotes, or notes about this book...">
+                  </textarea>
+                  <div class="flex justify-end gap-2 mt-2">
+                    @if (userNotes()) {
+                      <button
+                        class="px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 cursor-pointer btn-cancel-notes"
+                        (click)="isEditingNotes.set(false)">
+                        Cancel
+                      </button>
+                    }
+                    <button
+                      class="px-4 py-2 rounded-lg text-sm font-bold transition-all duration-200 cursor-pointer btn-save-notes"
+                      (click)="saveNotes(notesArea.value)">
+                      Save Note
+                    </button>
+                  </div>
                 }
-              </div>
-            </section>
+              </section>
+            }
           }
-
-
-          @if (subjectTimes.length > 0) {
-            <section class="info-section">
-              <h2 class="section-title">Time Periods</h2>
-              <div class="tag-cloud">
-                @for (time of subjectTimes; track time) {
-                  <span class="tag tag-time">{{ time }}</span>
-                }
-              </div>
-            </section>
-          }
-
-          @if (book().languages?.length > 0) {
-            <section class="info-section">
-              <h2 class="section-title">Available Languages</h2>
-              <div class="tag-cloud">
-                @for (lang of book().languages?.slice(0, 12); track lang) {
-                  <span class="tag tag-lang">{{ lang | uppercase }}</span>
-                }
-                @if (book().languages?.length > 12) {
-                  <span class="tag tag-more">+{{ book().languages.length - 12 }} more</span>
-                }
-              </div>
-            </section>
-          }
-        }
-      </main>
+        </main>
       </div>
     </div>
   }

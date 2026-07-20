@@ -1,7 +1,6 @@
 <div class="book-card flex flex-col overflow-hidden rounded-2xl cursor-pointer shadow-md transition-[transform,box-shadow] duration-300 ease-in-out hover:-translate-y-1 hover:scale-[1.02] hover:shadow-2xl h-full"
      (click)="onCardClick()">
 
-
   @if (mode === 'discover') {
     <div class="discover-cover-wrap relative flex-1 overflow-hidden"
          [class.h-full]="mode === 'discover'">
@@ -38,6 +37,15 @@
 
   @if (mode === 'library') {
 
+    <div class="library-card-wrap relative">
+
+      <button
+        class="delete-btn absolute top-2 right-2 z-10 w-7 h-7 rounded-full flex items-center justify-center text-sm font-bold opacity-0 transition-opacity duration-200"
+        (click)="onDelete($event)"
+        title="Remove from library">
+        ✕
+      </button>
+
     @if (hasCover) {
       <img
         class="w-full h-40 object-cover shrink-0"
@@ -53,6 +61,8 @@
         </p>
       </div>
     }
+
+    </div>
 
     <div class="p-3 flex flex-col gap-2 flex-1">
 
@@ -83,10 +93,10 @@
         }
       </select>
 
-      @if (book?.totalPages) {
+      @if (book?.total_pages ?? book?.totalPages) {
         <div class="progress-section" (click)="$event.stopPropagation()">
           <div class="progress-label">
-            <span>{{ book?.pagesRead ?? 0 }} / {{ book?.totalPages }} pages</span>
+            <span>{{ book?.pages_read ?? book?.pagesRead ?? 0 }} / {{ book?.total_pages ?? book?.totalPages }} pages</span>
             <span>{{ progressPercent }}%</span>
           </div>
           <div class="progress-track">

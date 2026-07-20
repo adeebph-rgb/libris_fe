@@ -19,6 +19,7 @@ export class BookCard {
   @Output() ratingChange = new EventEmitter<number>();
   @Output() statusChange = new EventEmitter<string>();
   @Output() bookClick = new EventEmitter<any>();
+  @Output() deleteBook = new EventEmitter<void>();
 
   readonly statuses = ['Want to Read', 'Reading', 'Read'];
 
@@ -31,7 +32,7 @@ export class BookCard {
   }
 
   onAdd(event: MouseEvent): void {
-    event.stopPropagation(); // don't bubble up to card click
+    event.stopPropagation();
     if (!this.inLibrary) {
       this.addToLibrary.emit();
     }
@@ -47,7 +48,14 @@ export class BookCard {
   }
 
   get progressPercent(): number {
-    if (!this.book?.totalPages || this.book.totalPages <= 0) return 0;
-    return Math.min(100, Math.round(((this.book?.pagesRead ?? 0) / this.book.totalPages) * 100));
+    const pages = this.book?.pages_read ?? this.book?.pagesRead ?? 0;
+    const total = this.book?.total_pages ?? this.book?.totalPages ?? 0;
+    if (!total || total <= 0) return 0;
+    return Math.min(100, Math.round((pages / total) * 100));
+  }
+
+  onDelete(event: MouseEvent): void {
+    event.stopPropagation();
+    this.deleteBook.emit();
   }
 }

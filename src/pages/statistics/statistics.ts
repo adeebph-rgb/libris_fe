@@ -22,7 +22,7 @@ export class Statistics implements OnInit {
   booksWantToRead = computed(() => this.books().filter(b => b.status === 'Want to Read').length);
 
   totalPagesRead = computed(() => {
-    return this.books().reduce((acc, b) => acc + (b.pagesRead || 0), 0);
+    return this.books().reduce((acc, b) => acc + (b.pages_read || 0), 0);
   });
 
   averageRating = computed(() => {
@@ -49,6 +49,6 @@ export class Statistics implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.books.set(this.libraryService.getBooks());
+    this.libraryService.loadBooks().subscribe(books => this.books.set(books));
   }
 }

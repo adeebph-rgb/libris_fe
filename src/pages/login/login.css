@@ -55,6 +55,17 @@
   text-align: center;
 }
 
+.success-banner {
+  background: #d4edda;
+  border: 1px solid #c3e6cb;
+  color: #155724;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
 .auth-form {
   display: flex;
   flex-direction: column;
@@ -84,6 +95,8 @@
 }
 
 .form-group input {
+  width: 100%;
+  box-sizing: border-box;
   padding: 0.65rem 0.85rem;
   border: 1.5px solid #E5CB90;
   border-radius: 8px;
@@ -96,6 +109,41 @@
 
 .form-group input:focus {
   border-color: #34A99D;
+}
+
+.password-wrapper {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
+.password-wrapper input {
+  padding-right: 2.5rem;
+}
+
+.password-toggle-btn {
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  transition: color 0.2s;
+}
+
+.password-toggle-btn:hover {
+  color: #34A99D;
+}
+
+.eye-icon {
+  width: 1.25rem;
+  height: 1.25rem;
 }
 
 .btn-submit {

@@ -79,11 +79,30 @@
   height: 24px;
 }
 
-.bg-teal { background-color: #34A99D; color: white; }
-.bg-gold { background-color: #E5CB90; color: #2E4A4F; }
-.bg-green { background-color: #d4edda; color: #155724; }
-.bg-coral { background-color: #fff3cd; color: #7a5c00; }
-.bg-gray { background-color: #e2e8f0; color: #4a5568; }
+.bg-teal {
+  background-color: #34A99D;
+  color: white;
+}
+
+.bg-gold {
+  background-color: #E5CB90;
+  color: #2E4A4F;
+}
+
+.bg-green {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.bg-coral {
+  background-color: #fff3cd;
+  color: #7a5c00;
+}
+
+.bg-gray {
+  background-color: #e2e8f0;
+  color: #4a5568;
+}
 
 .card-info {
   display: flex;

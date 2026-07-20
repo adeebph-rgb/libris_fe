@@ -40,6 +40,11 @@ export const routes: Routes = [
         path: 'book/:key',
         loadComponent: () => import('../pages/book-detail/book-detail').then(m => m.BookDetail),
         canActivate: [authGuard]
+    },
+    {
+        path: 'book/:key/read',
+        loadComponent: () => import('../pages/book-reader/book-reader').then(m => m.BookReader),
+        canActivate: [authGuard]
     }
 ];
 
