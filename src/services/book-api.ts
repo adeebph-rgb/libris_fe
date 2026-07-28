@@ -21,6 +21,7 @@ export interface Book {
   totalPages?: number;
   dateStarted?: string;
   dateFinished?: string;
+  subjects?: string[];
 }
 
 @Injectable({
@@ -63,6 +64,9 @@ export class BookApi {
             hasFulltext: book.has_fulltext ?? false,
             authorKeys: book.author_key ?? [],
             totalPages: book.number_of_pages_median ?? null,
+            subjects: ((book.subject ?? []) as string[])
+              .filter((s: string) => !s.toLowerCase().includes('award') && !s.includes(':') && !s.includes('='))
+              .slice(0, 10),
           }))
         ),
         tap(books => this.searchCache.set(query, books))

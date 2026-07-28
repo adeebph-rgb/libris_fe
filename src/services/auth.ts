@@ -83,4 +83,10 @@ export class AuthService {
         tap((user) => this.currentUser.set(user))
       );
   }
+
+  deleteAccount(): Observable<any> {
+    return this.http.delete<any>(`${BACKEND_URL}/auth/user`).pipe(
+      tap(() => this.logout())
+    );
+  }
 }

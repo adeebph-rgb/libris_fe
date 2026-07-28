@@ -35,6 +35,11 @@
           <p class="action-description">Permanently clear all local books, history, and reading sessions.</p>
           <button (click)="showClearModal.set(true)" class="btn-data-action btn-danger">Reset Library Data</button>
         </div>
+
+        <div class="action-item danger-item">
+          <p class="action-description">Permanently delete your user account and all library data. This cannot be undone.</p>
+          <button (click)="showDeleteModal.set(true)" class="btn-data-action btn-danger">Delete Account</button>
+        </div>
       </div>
     </div>
   </div>
@@ -45,10 +50,25 @@
         <h3 class="modal-title">Reset Library Data?</h3>
         <p class="modal-desc">This action cannot be undone. All your ratings, statuses, and logs will be permanently deleted.</p>
         <p class="modal-desc">Type <strong>DELETE</strong> below to confirm:</p>
-        <input type="text" [(ngModel)]="clearConfirmText" class="modal-input" placeholder="Type DELETE..." />
+        <input type="text" [(ngModel)]="clearConfirmText" class="modal-input" placeholder="Type DELETE" />
         <div class="modal-actions">
           <button (click)="showClearModal.set(false); clearConfirmText = ''" class="btn-modal btn-cancel">Cancel</button>
           <button (click)="clearLibrary()" class="btn-modal btn-confirm">Clear Database</button>
+        </div>
+      </div>
+    </div>
+  }
+
+  @if (showDeleteModal()) {
+    <div class="modal-overlay">
+      <div class="modal-card">
+        <h3 class="modal-title">Delete Account?</h3>
+        <p class="modal-desc">This action cannot be undone. Your account, books, reading sessions, and bookmarks will be deleted forever.</p>
+        <p class="modal-desc">Type <strong>DELETE ACCOUNT</strong> below to confirm:</p>
+        <input type="text" [(ngModel)]="deleteConfirmText" class="modal-input" placeholder="Type DELETE ACCOUNT" />
+        <div class="modal-actions">
+          <button (click)="showDeleteModal.set(false); deleteConfirmText = ''" class="btn-modal btn-cancel">Cancel</button>
+          <button (click)="deleteAccount()" class="btn-modal btn-confirm">Delete Forever</button>
         </div>
       </div>
     </div>

@@ -4,7 +4,7 @@
   align-items: center;
   min-height: 100vh;
   background: #34A99D;
-  padding: 1.5rem;
+
 }
 
 .login-card {
@@ -14,7 +14,7 @@
   border: 2px solid #E5CB90;
   border-radius: 16px;
   box-shadow: 0 10px 30px rgba(46, 74, 79, 0.1);
-  padding: 2.5rem;
+  padding: 1.5rem;
 }
 
 .logo-area {
@@ -81,6 +81,7 @@
 }
 
 .form-group {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
@@ -109,6 +110,47 @@
 
 .form-group input:focus {
   border-color: #34A99D;
+}
+
+.form-group input.input-error {
+  border-color: #e05c5c;
+}
+
+.form-group input.input-error:focus {
+  border-color: #e05c5c;
+}
+
+.field-error {
+  position: absolute;
+  bottom: -1.1rem;
+  left: 0;
+  font-size: 0.72rem;
+  color: #c0392b;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  white-space: nowrap;
+  animation: fadeIn 0.15s ease;
+}
+
+.field-error::before {
+  content: '!';
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #c0392b;
+  color: #fff;
+  font-size: 0.62rem;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
 .password-wrapper {

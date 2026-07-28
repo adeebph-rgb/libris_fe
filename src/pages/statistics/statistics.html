@@ -4,7 +4,12 @@
     <p class="subtitle">Detailed statistics about your personal library and reading accomplishments</p>
   </div>
 
-  @if (totalBooks() === 0) {
+  @if (loading()) {
+    <div class="loading-state">
+      <div class="spinner"></div>
+      <p class="loading-message">Loading insights...</p>
+    </div>
+  } @else if (totalBooks() === 0) {
     <div class="empty-state">
       <p class="empty-message">No statistics available yet. Add books to your library to track progress!</p>
     </div>
@@ -39,8 +44,78 @@
           <h2 class="card-value">{{ totalPagesRead() }}</h2>
         </div>
       </div>
+
+     
+      <div class="stat-card">
+        <div class="card-icon bg-gray">
+          <svg lucideBookMarked></svg>
+        </div>
+        <div class="card-info">
+          <span class="card-label">Reading Now</span>
+          <h2 class="card-value">{{ booksReading() }}</h2>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <div class="card-icon bg-coral">
+          <svg lucideClock></svg>
+        </div>
+        <div class="card-info">
+          <span class="card-label">Time spent reading</span>
+          <h2 class="card-value">{{ formattedTotalTime() }}</h2>
+        </div>
+      </div>
     </div>
 
+    <div class="chart-panel-full">
+      <div class="chart-panel-header">
+        <h3 class="panel-title">
+          @if (pastYearMode()) {
+            Books Finished — Past 12 Months
+          } @else {
+            Books Finished 
+            — {{ selectedYear() }}
+          }
+        </h3>
+        <div class="chart-controls">
+          
+          @if (!pastYearMode()) {
+            <div class="year-nav">
+              <button class="year-nav-btn" (click)="prevYear()" title="Previous year">
+                <svg lucideChevronLeft></svg>
+              </button>
+              <span class="year-label">{{ selectedYear() }}</span>
+              <button class="year-nav-btn" (click)="nextYear()" [disabled]="!canGoForward()" title="Next year">
+                <svg lucideChevronRight></svg>
+              </button>
+            </div>
+          }
+          <button
+            class="toggle-btn"
+            [class.active]="pastYearMode()"
+            (click)="togglePastYearMode()"
+            title="Toggle Past 12 Months view">
+            Past 12 Months
+          </button>
+        </div>
+      </div>
+
+      @if (!pastYearMode()) {
+        <p class="chart-subtitle">
+          <strong>{{ booksReadThisSelectedYear() }}</strong> book{{ booksReadThisSelectedYear() !== 1 ? 's' : '' }} completed in {{ selectedYear() }}
+        </p>
+      } @else {
+        <p class="chart-subtitle">
+          <strong>{{ booksReadThisSelectedYear() }}</strong> book{{ booksReadThisSelectedYear() !== 1 ? 's' : '' }} completed in the past 12 months
+        </p>
+      }
+
+      <div class="chart-canvas-wrap">
+        <canvas #monthlyChart></canvas>
+      </div>
+    </div>
+
+  
     <div class="insights-container">
       <div class="goal-panel">
         <h3 class="panel-title">Yearly Reading Goal</h3>
@@ -69,15 +144,15 @@
             <p class="goal-status-desc">
               You have read <strong>{{ booksRead() }}</strong> of <strong>{{ yearlyGoal() }}</strong> books.
               @if (booksRead() >= yearlyGoal()) {
-                You achieved your reading goal for this year!
+                🎉 You achieved your reading goal for this year!
               } @else {
-                Keep going! You need {{ yearlyGoal() - booksRead() }} more books to achieve your goal.
+                Keep going! You need {{ yearlyGoal() - booksRead() }} more books to reach your goal.
               }
             </p>
           </div>
         </div>
       </div>
     </div>
+
   }
 </div>
-

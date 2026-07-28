@@ -40,10 +40,10 @@
     <div class="library-card-wrap relative">
 
       <button
-        class="delete-btn absolute top-2 right-2 z-10 w-7 h-7 rounded-full flex items-center justify-center text-sm font-bold opacity-0 transition-opacity duration-200"
+        class="delete-btn absolute top-2 right-2 z-10 w-6 h-6 rounded-full flex items-center justify-center text-sm font-bold opacity-0 transition-opacity duration-200"
         (click)="onDelete($event)"
         title="Remove from library">
-        ✕
+        <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" width="16px" fill="#FFF3C8"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
       </button>
 
     @if (hasCover) {
@@ -66,7 +66,7 @@
 
     <div class="p-3 flex flex-col gap-2 flex-1">
 
-      <h3 class="book-title text-base font-semibold m-0 leading-snug line-clamp-2 font-['Cormorant_Garamond',serif]">
+      <h3 class="book-title font-semibold m-0 leading-snug line-clamp-1 font-['Cormorant_Garamond',serif]">
         {{ book?.title }}
       </h3>
 
@@ -83,15 +83,25 @@
           ★
         </span>
       </div>
-
-      <select
-        class="status-select mt-auto text-xs px-2 py-1.5 rounded-md border-0 cursor-pointer outline-none w-full"
+      <div class="relative">
+        <select
+        class="status-select mt-auto text-xs px-2 py-1.5 rounded-md border-0 cursor-pointer outline-none w-full "
         (click)="$event.stopPropagation()"
         (change)="setStatus($event)">
         @for (s of statuses; track s) {
           <option [value]="s" [selected]="s === book?.status">{{ s }}</option>
+          
         }
+
+        
       </select>
+      <span class="absolute right-2 top-1/2 translate-y-[-50%] pointer-events-none text-[#FFF3C8] text-xs">▼</span>
+      </div>
+        
+      
+
+      
+
 
       @if (book?.total_pages ?? book?.totalPages) {
         <div class="progress-section" (click)="$event.stopPropagation()">

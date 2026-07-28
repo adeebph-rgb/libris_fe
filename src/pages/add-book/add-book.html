@@ -4,6 +4,12 @@
         Add New Book
     </h1>
 
+    @if (errorMsg()) {
+        <div class="error-banner">
+            {{ errorMsg() }}
+        </div>
+    }
+
     <form
         [formGroup]="bookForm"
         (ngSubmit)="addBook()"

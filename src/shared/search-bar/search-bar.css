@@ -27,7 +27,7 @@
   padding: 0.75rem 2.75rem;
   background: #FFF8EE;
   border: 2px solid #E5CB90;
-  border-radius: 999px;
+  border-radius: 6px;
   color: #2E4A4F;
   font-size: 0.95rem;
   outline: none;
@@ -56,19 +56,20 @@
 }
 
 .btn-search {
-  background: #E5CB90;
-  color: white;
+  background: #2E4A4F;
+  color: #E5CB90;
   border: none;
-  padding: 0.75rem 1.75rem;
-  border-radius: 999px;
+  padding: 0.2rem 1rem;
+  border-radius: 6px;
   font-weight: 700;
   font-size: 0.95rem;
   cursor: pointer;
-  transition: background-color 0.2s, transform 0.15s;
+  transition: opacity 0.3s, transform 0.15s;
 }
 
 .btn-search:hover {
-  background: #2E4A4F;
+
+  opacity: 0.8;
 }
 
 .btn-search:active {

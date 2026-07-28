@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 import { Library } from '../../services/library';
@@ -12,11 +12,25 @@ import { BookCard } from '../../shared/book-card/book-card';
   styleUrl: './mylibrary.css',
 })
 export class Mylibrary implements OnInit {
+  loading = signal(true);
 
-  constructor(public library: Library, private router: Router) {}
+  constructor(
+    public library: Library, 
+    private router: Router
+    ) {}
 
   ngOnInit(): void {
-    this.library.loadBooks().subscribe();
+    if (this.library.books().length > 0) {
+      this.loading.set(false);
+    }
+
+    this.library.loadBooks().subscribe({
+      next: () => this.loading.set(false),
+      error: (err) => {
+        console.error('Failed to load library books:', err);
+        this.loading.set(false);
+      }
+    });
   }
 
   get books(): any[] {

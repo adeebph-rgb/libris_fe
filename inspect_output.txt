@@ -1,0 +1,851 @@
+﻿
+=== PAGE 31 (height=612.3) ===
+Total words: 393
+
+  PDF.js Y range: min=66.5, max=570.1, range=503.6
+
+   pdfplumber_top_y   pdfjs_y    relY       x  text
+  y_top=   42.2  pdfjs_y=  570.1  relY=1.000  x=  53.9  xxx <-- TOP MARGIN (filtered?)
+  y_top=   42.5  pdfjs_y=  569.8  relY=0.999  x= 161.1  introduction <-- TOP MARGIN (filtered?)
+  y_top=   64.7  pdfjs_y=  547.6  relY=0.955  x=  54.2  entertaining <-- TOP MARGIN (filtered?)
+  y_top=   64.7  pdfjs_y=  547.6  relY=0.955  x= 106.8  ôfurboö <-- TOP MARGIN (filtered?)
+  y_top=   64.7  pdfjs_y=  547.6  relY=0.955  x= 139.3  of <-- TOP MARGIN (filtered?)
+  y_top=   64.7  pdfjs_y=  547.6  relY=0.955  x= 150.2  a <-- TOP MARGIN (filtered?)
+  y_top=   64.7  pdfjs_y=  547.6  relY=0.955  x= 157.2  text, <-- TOP MARGIN (filtered?)
+  y_top=   64.7  pdfjs_y=  547.6  relY=0.955  x= 177.6  as <-- TOP MARGIN (filtered?)
+  y_top=   64.7  pdfjs_y=  547.6  relY=0.955  x= 188.4  well <-- TOP MARGIN (filtered?)
+  y_top=   64.7  pdfjs_y=  547.6  relY=0.955  x= 207.7  as <-- TOP MARGIN (filtered?)
+  y_top=   64.7  pdfjs_y=  547.6  relY=0.955  x= 218.5  an <-- TOP MARGIN (filtered?)
+  y_top=   64.7  pdfjs_y=  547.6  relY=0.955  x= 230.9  informative <-- TOP MARGIN (filtered?)
+  y_top=   64.7  pdfjs_y=  547.6  relY=0.955  x= 281.1  illustration <-- TOP MARGIN (filtered?)
+  y_top=   64.7  pdfjs_y=  547.6  relY=0.955  x= 328.6  of <-- TOP MARGIN (filtered?)
+  y_top=   76.7  pdfjs_y=  535.6  relY=0.931  x=  54.3  the <-- TOP MARGIN (filtered?)
+  y_top=   76.7  pdfjs_y=  535.6  relY=0.931  x=  69.7  development <-- TOP MARGIN (filtered?)
+  y_top=   76.7  pdfjs_y=  535.6  relY=0.931  x= 125.8  of <-- TOP MARGIN (filtered?)
+  y_top=   76.7  pdfjs_y=  535.6  relY=0.931  x= 136.2  GaltÆs <-- TOP MARGIN (filtered?)
+  y_top=   76.7  pdfjs_y=  535.6  relY=0.931  x= 161.5  fiction. <-- TOP MARGIN (filtered?)
+  y_top=  112.1  pdfjs_y=  500.2  relY=0.861  x=  52.7  The
+  y_top=  112.1  pdfjs_y=  500.2  relY=0.861  x=  70.7  Omen
+  y_top=  136.7  pdfjs_y=  475.6  relY=0.812  x=  52.9  The
+  y_top=  136.7  pdfjs_y=  475.6  relY=0.812  x=  72.8  six
+  y_top=  136.7  pdfjs_y=  475.6  relY=0.812  x=  87.8  years
+  y_top=  136.7  pdfjs_y=  475.6  relY=0.812  x= 112.8  that
+  y_top=  136.7  pdfjs_y=  475.6  relY=0.812  x= 133.1  separate
+  y_top=  136.7  pdfjs_y=  475.5  relY=0.812  x= 170.6  The
+  y_top=  136.7  pdfjs_y=  475.5  relY=0.812  x= 189.2  Omen
+  y_top=  136.7  pdfjs_y=  475.6  relY=0.812  x= 217.4  from
+  y_top=  136.7  pdfjs_y=  475.6  relY=0.812  x= 241.6  the
+  y_top=  136.7  pdfjs_y=  475.6  relY=0.812  x= 258.9  two
+  y_top=  136.7  pdfjs_y=  475.6  relY=0.812  x= 278.8  previous
+  y_top=  136.7  pdfjs_y=  475.6  relY=0.812  x= 318.2  tales
+  y_top=  148.7  pdfjs_y=  463.6  relY=0.789  x=  54.3  brought
+  y_top=  148.7  pdfjs_y=  463.6  relY=0.789  x=  89.9  about
+  y_top=  148.7  pdfjs_y=  463.6  relY=0.789  x= 116.3  significant
+  y_top=  148.7  pdfjs_y=  463.6  relY=0.789  x= 161.2  changes
+  y_top=  148.7  pdfjs_y=  463.6  relY=0.789  x= 196.5  in
+  y_top=  148.7  pdfjs_y=  463.6  relY=0.789  x= 207.3  GaltÆs
+  y_top=  148.7  pdfjs_y=  463.6  relY=0.789  x= 233.2  status
+  y_top=  148.7  pdfjs_y=  463.6  relY=0.789  x= 259.5  and
+  y_top=  148.7  pdfjs_y=  463.6  relY=0.789  x= 277.5  career.
+  y_top=  148.7  pdfjs_y=  463.6  relY=0.789  x= 306.8  Thanks
+  y_top=  160.7  pdfjs_y=  451.6  relY=0.765  x=  54.3  to
+  y_top=  160.7  pdfjs_y=  451.6  relY=0.765  x=  66.4  the
+  y_top=  160.7  pdfjs_y=  451.6  relY=0.765  x=  83.4  numerous
+  y_top=  160.7  pdfjs_y=  451.6  relY=0.765  x= 128.7  novels
+  y_top=  160.7  pdfjs_y=  451.6  relY=0.765  x= 158.7  and
+  y_top=  160.7  pdfjs_y=  451.6  relY=0.765  x= 177.8  periodical
+  y_top=  160.7  pdfjs_y=  451.6  relY=0.765  x= 222.7  contributions
+  y_top=  160.7  pdfjs_y=  451.6  relY=0.765  x= 282.5  he
+  y_top=  160.7  pdfjs_y=  451.6  relY=0.765  x= 296.3  published
+  y_top=  172.7  pdfjs_y=  439.6  relY=0.741  x=  54.2  during
+  y_top=  172.7  pdfjs_y=  439.6  relY=0.741  x=  83.3  the
+  y_top=  172.7  pdfjs_y=  439.6  relY=0.741  x=  98.4  early
+  y_top=  172.7  pdfjs_y=  439.6  relY=0.741  x= 119.9  1820s,
+  y_top=  172.7  pdfjs_y=  439.6  relY=0.741  x= 145.3  Galt
+  y_top=  172.7  pdfjs_y=  439.6  relY=0.741  x= 164.9  was
+  y_top=  172.7  pdfjs_y=  439.6  relY=0.741  x= 181.9  by
+  y_top=  172.7  pdfjs_y=  439.6  relY=0.741  x= 193.7  mid-decade
+  y_top=  172.7  pdfjs_y=  439.6  relY=0.741  x= 243.9  an
+  y_top=  172.7  pdfjs_y=  439.6  relY=0.741  x= 255.5  established,
+  y_top=  172.7  pdfjs_y=  439.6  relY=0.741  x= 305.3  popular
+  y_top=  184.7  pdfjs_y=  427.6  relY=0.717  x=  54.0  fiction
+  y_top=  184.7  pdfjs_y=  427.6  relY=0.717  x=  83.6  writer.
+  y_top=  184.7  pdfjs_y=  427.6  relY=0.717  x= 113.1  He
+  y_top=  184.7  pdfjs_y=  427.6  relY=0.717  x= 128.7  was
+  y_top=  184.7  pdfjs_y=  427.6  relY=0.717  x= 146.9  also
+  y_top=  184.7  pdfjs_y=  427.6  relY=0.717  x= 166.2  engaged
+  y_top=  184.7  pdfjs_y=  427.6  relY=0.717  x= 202.9  in
+  y_top=  184.7  pdfjs_y=  427.6  relY=0.717  x= 214.0  the
+  y_top=  184.7  pdfjs_y=  427.6  relY=0.717  x= 230.3  major
+  y_top=  184.7  pdfjs_y=  427.6  relY=0.717  x= 257.5  business
+  y_top=  184.7  pdfjs_y=  427.6  relY=0.717  x= 295.3  enterprise
+  y_top=  196.7  pdfjs_y=  415.6  relY=0.693  x=  54.2  of
+  y_top=  196.7  pdfjs_y=  415.6  relY=0.693  x=  64.9  his
+  y_top=  196.7  pdfjs_y=  415.6  relY=0.693  x=  79.1  career,
+  y_top=  196.7  pdfjs_y=  415.6  relY=0.693  x= 108.3  the
+  y_top=  196.7  pdfjs_y=  415.6  relY=0.693  x= 123.9  Canada
+  y_top=  196.7  pdfjs_y=  415.6  relY=0.693  x= 157.5  Company
+  y_top=  196.7  pdfjs_y=  415.6  relY=0.693  x= 200.5  that
+  y_top=  196.7  pdfjs_y=  415.6  relY=0.693  x= 219.0  bought
+  y_top=  196.7  pdfjs_y=  415.6  relY=0.693  x= 250.9  Crown
+  y_top=  196.7  pdfjs_y=  415.6  relY=0.693  x= 281.9  land
+  y_top=  196.7  pdfjs_y=  415.6  relY=0.693  x= 302.1  and
+  y_top=  196.7  pdfjs_y=  415.6  relY=0.693  x= 319.8  sold
+  y_top=  208.7  pdfjs_y=  403.6  relY=0.669  x=  54.3  it
+  y_top=  208.7  pdfjs_y=  403.6  relY=0.669  x=  62.7  to
+  y_top=  208.7  pdfjs_y=  403.6  relY=0.669  x=  73.7  settlers
+  y_top=  208.7  pdfjs_y=  403.6  relY=0.669  x= 105.3  on
+  y_top=  208.7  pdfjs_y=  403.6  relY=0.669  x= 118.8  behalf
+  y_top=  208.7  pdfjs_y=  403.6  relY=0.669  x= 146.7  of
+  y_top=  208.7  pdfjs_y=  403.6  relY=0.669  x= 157.5  the
+  y_top=  208.7  pdfjs_y=  403.6  relY=0.669  x= 173.4  British
+  y_top=  208.7  pdfjs_y=  403.6  relY=0.669  x= 203.7  government,
+  y_top=  208.7  pdfjs_y=  403.6  relY=0.669  x= 258.4  and
+  y_top=  208.7  pdfjs_y=  403.6  relY=0.669  x= 276.4  he
+  y_top=  208.7  pdfjs_y=  403.6  relY=0.669  x= 289.0  made
+  y_top=  208.7  pdfjs_y=  403.6  relY=0.669  x= 314.2  a
+  y_top=  208.7  pdfjs_y=  403.6  relY=0.669  x= 321.2  first
+  y_top=  220.7  pdfjs_y=  391.6  relY=0.646  x=  54.3  trip
+  y_top=  220.7  pdfjs_y=  391.6  relY=0.646  x=  71.5  to
+  y_top=  220.7  pdfjs_y=  391.6  relY=0.646  x=  82.4  North
+  y_top=  220.7  pdfjs_y=  391.6  relY=0.646  x= 110.3  America
+  y_top=  220.7  pdfjs_y=  391.6  relY=0.646  x= 147.5  to
+  y_top=  220.7  pdfjs_y=  391.6  relY=0.646  x= 158.4  pursue
+  y_top=  220.7  pdfjs_y=  391.6  relY=0.646  x= 188.8  this
+  y_top=  220.7  pdfjs_y=  391.6  relY=0.646  x= 206.3  venture
+  y_top=  220.7  pdfjs_y=  391.6  relY=0.646  x= 239.8  in
+  y_top=  220.7  pdfjs_y=  391.6  relY=0.646  x= 250.3  1825.
+  y_top=  220.7  pdfjs_y=  391.6  relY=0.646  x= 271.2  Galt
+  y_top=  220.7  pdfjs_y=  391.6  relY=0.646  x= 291.4  kept
+  y_top=  220.7  pdfjs_y=  391.6  relY=0.646  x= 311.8  up
+  y_top=  220.7  pdfjs_y=  391.6  relY=0.646  x= 324.9  his
+  y_top=  232.7  pdfjs_y=  379.6  relY=0.622  x=  54.2  commercial
+  y_top=  232.7  pdfjs_y=  379.6  relY=0.622  x= 105.6  and
+  y_top=  232.7  pdfjs_y=  379.6  relY=0.622  x= 123.9  literary
+  y_top=  232.7  pdfjs_y=  379.6  relY=0.622  x= 156.2  activities
+  y_top=  232.7  pdfjs_y=  379.6  relY=0.622  x= 195.7  simultaneously,
+  y_top=  232.7  pdfjs_y=  379.6  relY=0.622  x= 262.2  writing
+  y_top=  232.7  pdfjs_y=  379.6  relY=0.622  x= 294.7  at
+  y_top=  232.7  pdfjs_y=  379.6  relY=0.622  x= 305.2  a
+  y_top=  232.7  pdfjs_y=  379.6  relY=0.622  x= 312.6  daunt-
+  y_top=  244.7  pdfjs_y=  367.6  relY=0.598  x=  54.3  ing
+  y_top=  244.7  pdfjs_y=  367.6  relY=0.598  x=  68.9  pace
+  y_top=  244.7  pdfjs_y=  367.6  relY=0.598  x=  89.3  while
+  y_top=  244.7  pdfjs_y=  367.6  relY=0.598  x= 113.6  moving
+  y_top=  244.7  pdfjs_y=  367.6  relY=0.598  x= 146.7  wherever
+  y_top=  244.7  pdfjs_y=  367.6  relY=0.598  x= 186.3  business
+  y_top=  244.7  pdfjs_y=  367.6  relY=0.598  x= 222.9  and
+  y_top=  244.7  pdfjs_y=  367.6  relY=0.598  x= 240.0  family
+  y_top=  244.7  pdfjs_y=  367.6  relY=0.598  x= 267.4  matters
+  y_top=  244.7  pdfjs_y=  367.6  relY=0.598  x= 299.6  took
+  y_top=  244.7  pdfjs_y=  367.6  relY=0.598  x= 320.2  him.
+  y_top=  256.7  pdfjs_y=  355.6  relY=0.574  x=  53.1  Yet
+  y_top=  256.7  pdfjs_y=  355.5  relY=0.574  x=  68.0  The
+  y_top=  256.7  pdfjs_y=  355.5  relY=0.574  x=  84.4  Omen
+  y_top=  256.7  pdfjs_y=  355.6  relY=0.574  x= 110.4  arose
+  y_top=  256.7  pdfjs_y=  355.6  relY=0.574  x= 134.0  during
+  y_top=  256.7  pdfjs_y=  355.6  relY=0.574  x= 163.2  a
+  y_top=  256.7  pdfjs_y=  355.6  relY=0.574  x= 169.6  period
+  y_top=  256.7  pdfjs_y=  355.6  relY=0.574  x= 198.6  of
+  y_top=  256.7  pdfjs_y=  355.6  relY=0.574  x= 208.8  unusual
+  y_top=  256.7  pdfjs_y=  355.6  relY=0.574  x= 242.9  anxiety
+  y_top=  256.7  pdfjs_y=  355.6  relY=0.574  x= 274.7  and
+  y_top=  256.7  pdfjs_y=  355.6  relY=0.574  x= 292.0  depression.
+  y_top=  268.7  pdfjs_y=  343.6  relY=0.550  x=  52.9  The
+  y_top=  268.7  pdfjs_y=  343.6  relY=0.550  x=  71.7  writing
+  y_top=  268.7  pdfjs_y=  343.6  relY=0.550  x= 104.4  of
+  y_top=  268.7  pdfjs_y=  343.6  relY=0.550  x= 115.7  the
+  y_top=  268.7  pdfjs_y=  343.6  relY=0.550  x= 132.0  tale
+  y_top=  268.7  pdfjs_y=  343.6  relY=0.550  x= 149.8  coincided
+  y_top=  268.7  pdfjs_y=  343.6  relY=0.550  x= 193.4  with
+  y_top=  268.7  pdfjs_y=  343.6  relY=0.550  x= 215.0  a
+  y_top=  268.7  pdfjs_y=  343.6  relY=0.550  x= 222.4  national
+  y_top=  268.7  pdfjs_y=  343.6  relY=0.550  x= 259.0  financial
+  y_top=  268.7  pdfjs_y=  343.6  relY=0.550  x= 296.7  crisis
+  y_top=  268.7  pdfjs_y=  343.6  relY=0.550  x= 320.9  that
+  y_top=  280.7  pdfjs_y=  331.6  relY=0.526  x=  54.3  began
+  y_top=  280.7  pdfjs_y=  331.6  relY=0.526  x=  82.5  in
+  y_top=  280.7  pdfjs_y=  331.6  relY=0.526  x=  94.3  the
+  y_top=  280.7  pdfjs_y=  331.6  relY=0.526  x= 111.2  latter
+  y_top=  280.7  pdfjs_y=  331.6  relY=0.526  x= 135.8  months
+  y_top=  280.7  pdfjs_y=  331.6  relY=0.526  x= 171.1  of
+  y_top=  280.7  pdfjs_y=  331.6  relY=0.526  x= 183.0  1825,
+  y_top=  280.7  pdfjs_y=  331.6  relY=0.526  x= 205.3  involving
+  y_top=  280.7  pdfjs_y=  331.6  relY=0.526  x= 247.1  a
+  y_top=  280.7  pdfjs_y=  331.6  relY=0.526  x= 255.2  major
+  y_top=  280.7  pdfjs_y=  331.6  relY=0.526  x= 283.0  stock
+  y_top=  280.7  pdfjs_y=  331.6  relY=0.526  x= 308.3  market
+  y_top=  292.7  pdfjs_y=  319.6  relY=0.503  x=  54.2  crash,
+  y_top=  292.7  pdfjs_y=  319.6  relY=0.503  x=  79.6  widespread
+  y_top=  292.7  pdfjs_y=  319.6  relY=0.503  x= 128.0  bank
+  y_top=  292.7  pdfjs_y=  319.6  relY=0.503  x= 149.6  failures
+  y_top=  292.7  pdfjs_y=  319.6  relY=0.503  x= 180.8  in
+  y_top=  292.7  pdfjs_y=  319.6  relY=0.503  x= 190.4  England,
+  y_top=  292.7  pdfjs_y=  319.6  relY=0.503  x= 228.3  and
+  y_top=  292.7  pdfjs_y=  319.6  relY=0.503  x= 245.2  aftershocks
+  y_top=  292.7  pdfjs_y=  319.6  relY=0.503  x= 293.1  that
+  y_top=  292.7  pdfjs_y=  319.6  relY=0.503  x= 310.7  hit
+  y_top=  292.7  pdfjs_y=  319.6  relY=0.503  x= 323.5  the
+  y_top=  304.7  pdfjs_y=  307.6  relY=0.479  x=  53.9  British
+  y_top=  304.7  pdfjs_y=  307.6  relY=0.479  x=  84.1  publishing
+  y_top=  304.7  pdfjs_y=  307.6  relY=0.479  x= 130.0  industry
+  y_top=  304.7  pdfjs_y=  307.6  relY=0.479  x= 167.1  with
+  y_top=  304.7  pdfjs_y=  307.6  relY=0.479  x= 188.2  particular
+  y_top=  304.7  pdfjs_y=  307.6  relY=0.479  x= 230.3  severity.
+  y_top=  304.7  pdfjs_y=  307.6  relY=0.479  x= 266.1  GaltÆs
+  y_top=  304.7  pdfjs_y=  307.6  relY=0.479  x= 291.8  own
+  y_top=  304.7  pdfjs_y=  307.6  relY=0.479  x= 312.3  affairs
+  y_top=  316.7  pdfjs_y=  295.6  relY=0.455  x=  53.9  were
+  y_top=  316.7  pdfjs_y=  295.6  relY=0.455  x=  76.0  precarious
+  y_top=  316.7  pdfjs_y=  295.6  relY=0.455  x= 121.5  as
+  y_top=  316.7  pdfjs_y=  295.6  relY=0.455  x= 132.3  he
+  y_top=  316.7  pdfjs_y=  295.6  relY=0.455  x= 144.8  anxiously
+  y_top=  316.7  pdfjs_y=  295.6  relY=0.455  x= 186.3  awaited
+  y_top=  316.7  pdfjs_y=  295.6  relY=0.455  x= 220.2  parliamentary
+  y_top=  316.7  pdfjs_y=  295.6  relY=0.455  x= 280.1  decisions
+  y_top=  316.7  pdfjs_y=  295.6  relY=0.455  x= 320.9  that
+  y_top=  328.7  pdfjs_y=  283.6  relY=0.431  x=  53.9  would
+  y_top=  328.7  pdfjs_y=  283.6  relY=0.431  x=  82.3  determine
+  y_top=  328.7  pdfjs_y=  283.6  relY=0.431  x= 127.2  the
+  y_top=  328.7  pdfjs_y=  283.6  relY=0.431  x= 143.1  fate
+  y_top=  328.7  pdfjs_y=  283.6  relY=0.431  x= 160.6  of
+  y_top=  328.7  pdfjs_y=  283.6  relY=0.431  x= 171.5  the
+  y_top=  328.7  pdfjs_y=  283.6  relY=0.431  x= 187.4  Canada
+  y_top=  328.7  pdfjs_y=  283.6  relY=0.431  x= 221.4  Company;
+  y_top=  328.7  pdfjs_y=  283.6  relY=0.431  x= 267.6  ômy
+  y_top=  328.7  pdfjs_y=  283.6  relY=0.431  x= 286.5  mind
+  y_top=  328.7  pdfjs_y=  283.6  relY=0.431  x= 311.0  was
+  y_top=  328.7  pdfjs_y=  283.6  relY=0.431  x= 328.8  in
+  y_top=  340.7  pdfjs_y=  271.6  relY=0.407  x=  54.2  no
+  y_top=  340.7  pdfjs_y=  271.6  relY=0.407  x=  67.2  very
+  y_top=  340.7  pdfjs_y=  271.6  relY=0.407  x=  87.1  comfortable
+  y_top=  340.7  pdfjs_y=  271.6  relY=0.407  x= 139.5  state,ö
+  y_top=  340.7  pdfjs_y=  271.6  relY=0.407  x= 165.5  he
+  y_top=  340.7  pdfjs_y=  271.6  relY=0.407  x= 177.7  recalls
+  y_top=  340.7  pdfjs_y=  271.6  relY=0.407  x= 205.8  in
+  y_top=  340.7  pdfjs_y=  271.6  relY=0.407  x= 216.0  his
+  y_top=  339.4  pdfjs_y=  272.9  relY=0.410  x= 230.0  Autobiography.22
+  y_top=  340.7  pdfjs_y=  271.6  relY=0.407  x= 298.6  Added
+  y_top=  340.7  pdfjs_y=  271.6  relY=0.407  x= 328.4  to
+  y_top=  352.7  pdfjs_y=  259.6  relY=0.383  x=  54.3  his
+  y_top=  352.7  pdfjs_y=  259.6  relY=0.383  x=  69.0  concerns
+  y_top=  352.7  pdfjs_y=  259.6  relY=0.383  x= 108.9  over
+  y_top=  352.7  pdfjs_y=  259.6  relY=0.383  x= 129.7  business
+  y_top=  352.7  pdfjs_y=  259.6  relY=0.383  x= 167.2  was
+  y_top=  352.7  pdfjs_y=  259.6  relY=0.383  x= 185.2  the
+  y_top=  352.7  pdfjs_y=  259.6  relY=0.383  x= 201.3  failing
+  y_top=  352.7  pdfjs_y=  259.6  relY=0.383  x= 229.6  health
+  y_top=  352.7  pdfjs_y=  259.6  relY=0.383  x= 258.0  of
+  y_top=  352.7  pdfjs_y=  259.6  relY=0.383  x= 269.0  his
+  y_top=  352.7  pdfjs_y=  259.6  relY=0.383  x= 283.7  mother,
+  y_top=  352.7  pdfjs_y=  259.6  relY=0.383  x= 318.8  who
+  y_top=  364.7  pdfjs_y=  247.6  relY=0.360  x=  53.9  was
+  y_top=  364.7  pdfjs_y=  247.6  relY=0.360  x=  72.2  being
+  y_top=  364.7  pdfjs_y=  247.6  relY=0.360  x=  98.1  cared
+  y_top=  364.7  pdfjs_y=  247.6  relY=0.360  x= 123.5  for
+  y_top=  364.7  pdfjs_y=  247.6  relY=0.360  x= 138.4  by
+  y_top=  364.7  pdfjs_y=  247.6  relY=0.360  x= 151.5  his
+  y_top=  364.7  pdfjs_y=  247.6  relY=0.360  x= 166.5  sister
+  y_top=  364.7  pdfjs_y=  247.6  relY=0.360  x= 191.0  in
+  y_top=  364.7  pdfjs_y=  247.6  relY=0.360  x= 202.2  Scotland
+  y_top=  364.7  pdfjs_y=  247.6  relY=0.360  x= 241.4  during
+  y_top=  364.7  pdfjs_y=  247.6  relY=0.360  x= 271.8  the
+  y_top=  364.7  pdfjs_y=  247.6  relY=0.360  x= 288.2  last
+  y_top=  364.7  pdfjs_y=  247.6  relY=0.360  x= 305.2  months
+  y_top=  376.7  pdfjs_y=  235.6  relY=0.336  x=  54.2  of
+  y_top=  376.7  pdfjs_y=  235.6  relY=0.336  x=  65.2  her
+  y_top=  376.7  pdfjs_y=  235.6  relY=0.336  x=  81.5  life.
+  y_top=  376.7  pdfjs_y=  235.6  relY=0.336  x=  99.0  In
+  y_top=  376.7  pdfjs_y=  235.6  relY=0.336  x= 110.5  a
+  y_top=  376.7  pdfjs_y=  235.6  relY=0.336  x= 117.7  letter
+  y_top=  376.7  pdfjs_y=  235.6  relY=0.336  x= 141.6  to
+  y_top=  376.7  pdfjs_y=  235.6  relY=0.336  x= 152.8  his
+  y_top=  376.7  pdfjs_y=  235.6  relY=0.336  x= 167.4  sister
+  y_top=  376.7  pdfjs_y=  235.6  relY=0.336  x= 191.6  dated
+  y_top=  376.7  pdfjs_y=  235.6  relY=0.336  x= 217.1  13
+  y_top=  376.7  pdfjs_y=  235.6  relY=0.336  x= 227.3  January
+  y_top=  376.7  pdfjs_y=  235.6  relY=0.336  x= 261.4  1826,
+  y_top=  376.7  pdfjs_y=  235.6  relY=0.336  x= 283.6  while
+  y_top=  376.7  pdfjs_y=  235.6  relY=0.336  x= 308.8  he
+  y_top=  376.7  pdfjs_y=  235.6  relY=0.336  x= 321.6  was
+  y_top=  388.7  pdfjs_y=  223.6  relY=0.312  x=  54.0  finishing
+  y_top=  388.7  pdfjs_y=  223.6  relY=0.312  x=  92.5  the
+  y_top=  388.7  pdfjs_y=  223.6  relY=0.312  x= 108.7  manuscript
+  y_top=  388.7  pdfjs_y=  223.6  relY=0.312  x= 158.1  of
+  y_top=  388.7  pdfjs_y=  223.5  relY=0.312  x= 169.2  The
+  y_top=  388.7  pdfjs_y=  223.6  relY=0.312  x= 186.6  Omen,
+  y_top=  388.7  pdfjs_y=  223.6  relY=0.312  x= 215.8  Galt
+  y_top=  388.7  pdfjs_y=  223.6  relY=0.312  x= 236.5  reveals
+  y_top=  388.7  pdfjs_y=  223.6  relY=0.312  x= 267.3  his
+  y_top=  388.7  pdfjs_y=  223.6  relY=0.312  x= 282.1  state
+  y_top=  388.7  pdfjs_y=  223.6  relY=0.312  x= 303.9  of
+  y_top=  388.7  pdfjs_y=  223.6  relY=0.312  x= 315.1  mind
+  y_top=  400.7  pdfjs_y=  211.6  relY=0.288  x=  53.9  with
+  y_top=  400.7  pdfjs_y=  211.6  relY=0.288  x=  75.1  unusual
+  y_top=  400.7  pdfjs_y=  211.6  relY=0.288  x= 109.9  frankness,
+  y_top=  400.7  pdfjs_y=  211.6  relY=0.288  x= 153.7  alluding
+  y_top=  400.7  pdfjs_y=  211.6  relY=0.288  x= 189.6  to
+  y_top=  400.7  pdfjs_y=  211.6  relY=0.288  x= 200.7  his
+  y_top=  400.7  pdfjs_y=  211.6  relY=0.288  x= 215.2  need
+  y_top=  400.7  pdfjs_y=  211.6  relY=0.288  x= 237.9  to
+  y_top=  400.7  pdfjs_y=  211.6  relY=0.288  x= 249.0  borrow
+  y_top=  400.7  pdfjs_y=  211.6  relY=0.288  x= 281.7  money
+  y_top=  400.7  pdfjs_y=  211.6  relY=0.288  x= 312.8  to
+  y_top=  400.7  pdfjs_y=  211.6  relY=0.288  x= 323.9  see
+  y_top=  412.7  pdfjs_y=  199.6  relY=0.264  x=  54.3  his
+  y_top=  412.7  pdfjs_y=  199.6  relY=0.264  x=  68.0  family
+  y_top=  412.7  pdfjs_y=  199.6  relY=0.264  x=  95.3  through
+  y_top=  412.7  pdfjs_y=  199.6  relY=0.264  x= 130.2  the
+  y_top=  412.7  pdfjs_y=  199.6  relY=0.264  x= 145.2  financial
+  y_top=  412.7  pdfjs_y=  199.6  relY=0.264  x= 181.8  crisis
+  y_top=  412.7  pdfjs_y=  199.6  relY=0.264  x= 204.6  and
+  y_top=  412.7  pdfjs_y=  199.6  relY=0.264  x= 221.8  his
+  y_top=  412.7  pdfjs_y=  199.6  relY=0.264  x= 235.5  general
+  y_top=  412.7  pdfjs_y=  199.6  relY=0.264  x= 267.0  depression
+  y_top=  412.7  pdfjs_y=  199.6  relY=0.264  x= 313.3  about
+  y_top=  424.7  pdfjs_y=  187.6  relY=0.240  x=  54.3  believing
+  y_top=  424.7  pdfjs_y=  187.6  relY=0.240  x=  93.8  himself
+  y_top=  424.7  pdfjs_y=  187.6  relY=0.240  x= 126.0  to
+  y_top=  424.7  pdfjs_y=  187.6  relY=0.240  x= 136.6  be
+  y_top=  424.7  pdfjs_y=  187.6  relY=0.240  x= 148.7  a
+  y_top=  424.7  pdfjs_y=  187.6  relY=0.240  x= 155.3  disappointment
+  y_top=  424.7  pdfjs_y=  187.6  relY=0.240  x= 222.8  to
+  y_top=  424.7  pdfjs_y=  187.6  relY=0.240  x= 233.4  their
+  y_top=  424.7  pdfjs_y=  187.6  relY=0.240  x= 254.9  mother:
+  y_top=  442.3  pdfjs_y=  170.0  relY=0.206  x=  75.2  I
+  y_top=  442.3  pdfjs_y=  170.0  relY=0.206  x=  80.7  feel
+  y_top=  442.3  pdfjs_y=  170.0  relY=0.206  x=  97.1  that
+  y_top=  442.3  pdfjs_y=  170.0  relY=0.206  x= 115.2  at
+  y_top=  442.3  pdfjs_y=  170.0  relY=0.206  x= 124.7  no
+  y_top=  442.3  pdfjs_y=  170.0  relY=0.206  x= 137.6  former
+  y_top=  442.3  pdfjs_y=  170.0  relY=0.206  x= 167.9  period
+  y_top=  442.3  pdfjs_y=  170.0  relY=0.206  x= 196.9  of
+  y_top=  442.3  pdfjs_y=  170.0  relY=0.206  x= 207.2  my
+  y_top=  442.3  pdfjs_y=  170.0  relY=0.206  x= 221.9  life
+  y_top=  442.3  pdfjs_y=  170.0  relY=0.206  x= 236.6  was
+  y_top=  442.3  pdfjs_y=  170.0  relY=0.206  x= 253.8  I
+  y_top=  442.3  pdfjs_y=  170.0  relY=0.206  x= 259.3  so
+  y_top=  442.3  pdfjs_y=  170.0  relY=0.206  x= 270.4  depressed
+  y_top=  442.3  pdfjs_y=  170.0  relY=0.206  x= 313.3  û
+  y_top=  454.3  pdfjs_y=  158.0  relY=0.182  x=  73.6  æhope
+  y_top=  454.3  pdfjs_y=  158.0  relY=0.182  x=  98.9  deferredÆ
+  y_top=  454.3  pdfjs_y=  158.0  relY=0.182  x= 137.5  too
+  y_top=  454.3  pdfjs_y=  158.0  relY=0.182  x= 153.2  long
+  y_top=  454.3  pdfjs_y=  158.0  relY=0.182  x= 173.1  has
+  y_top=  454.3  pdfjs_y=  158.0  relY=0.182  x= 188.6  made
+  y_top=  454.3  pdfjs_y=  158.0  relY=0.182  x= 213.0  me
+  y_top=  454.3  pdfjs_y=  158.0  relY=0.182  x= 227.7  sick
+  y_top=  454.3  pdfjs_y=  158.0  relY=0.182  x= 245.3  at
+  y_top=  454.3  pdfjs_y=  158.0  relY=0.182  x= 254.6  heart
+  y_top=  454.3  pdfjs_y=  158.0  relY=0.182  x= 277.8  &
+  y_top=  454.3  pdfjs_y=  158.0  relY=0.182  x= 287.4  I
+  y_top=  454.3  pdfjs_y=  158.0  relY=0.182  x= 292.7  begin
+  y_top=  466.3  pdfjs_y=  146.0  relY=0.158  x=  75.5  to
+  y_top=  466.3  pdfjs_y=  146.0  relY=0.158  x=  87.9  suffer,
+  y_top=  466.3  pdfjs_y=  146.0  relY=0.158  x= 116.5  for
+  y_top=  466.3  pdfjs_y=  146.0  relY=0.158  x= 132.3  the
+  y_top=  466.3  pdfjs_y=  146.0  relY=0.158  x= 149.5  first
+  y_top=  466.3  pdfjs_y=  146.0  relY=0.158  x= 169.3  time,
+  y_top=  466.3  pdfjs_y=  146.0  relY=0.158  x= 194.0  the
+  y_top=  466.3  pdfjs_y=  146.0  relY=0.158  x= 211.2  gnawing
+  y_top=  466.3  pdfjs_y=  146.0  relY=0.158  x= 249.7  of
+  y_top=  466.3  pdfjs_y=  146.0  relY=0.158  x= 261.9  disappointed
+  y_top=  478.3  pdfjs_y=  134.0  relY=0.134  x=  75.5  expectation.
+  y_top=  478.3  pdfjs_y=  134.0  relY=0.134  x= 130.0  Yet
+  y_top=  478.3  pdfjs_y=  134.0  relY=0.134  x= 147.2  the
+  y_top=  478.3  pdfjs_y=  134.0  relY=0.134  x= 164.8  same
+  y_top=  478.3  pdfjs_y=  134.0  relY=0.134  x= 190.1  sort
+  y_top=  478.3  pdfjs_y=  134.0  relY=0.134  x= 210.6  of
+  y_top=  478.3  pdfjs_y=  134.0  relY=0.134  x= 223.2  miracle,
+  y_top=  478.3  pdfjs_y=  134.0  relY=0.134  x= 259.9  from
+  y_top=  478.3  pdfjs_y=  134.0  relY=0.134  x= 284.3  light
+  y_top=  478.3  pdfjs_y=  134.0  relY=0.134  x= 307.1  to
+  y_top=  490.3  pdfjs_y=  122.0  relY=0.110  x=  75.5  darkness, <-- BOTTOM MARGIN (filtered?)
+  y_top=  490.3  pdfjs_y=  122.0  relY=0.110  x= 117.9  is <-- BOTTOM MARGIN (filtered?)
+  y_top=  490.3  pdfjs_y=  122.0  relY=0.110  x= 128.6  continued <-- BOTTOM MARGIN (filtered?)
+  y_top=  490.3  pdfjs_y=  122.0  relY=0.110  x= 174.7  to <-- BOTTOM MARGIN (filtered?)
+  y_top=  490.3  pdfjs_y=  122.0  relY=0.110  x= 187.4  be <-- BOTTOM MARGIN (filtered?)
+  y_top=  490.3  pdfjs_y=  122.0  relY=0.110  x= 201.6  performed <-- BOTTOM MARGIN (filtered?)
+  y_top=  490.3  pdfjs_y=  122.0  relY=0.110  x= 249.7  around <-- BOTTOM MARGIN (filtered?)
+  y_top=  490.3  pdfjs_y=  122.0  relY=0.110  x= 283.4  me <-- BOTTOM MARGIN (filtered?)
+  y_top=  490.3  pdfjs_y=  122.0  relY=0.110  x= 300.5  & <-- BOTTOM MARGIN (filtered?)
+  y_top=  490.3  pdfjs_y=  122.0  relY=0.110  x= 312.5  I <-- BOTTOM MARGIN (filtered?)
+  y_top=  502.3  pdfjs_y=  110.0  relY=0.086  x=  75.5  know <-- BOTTOM MARGIN (filtered?)
+  y_top=  502.3  pdfjs_y=  110.0  relY=0.086  x= 101.5  not, <-- BOTTOM MARGIN (filtered?)
+  y_top=  502.3  pdfjs_y=  110.0  relY=0.086  x= 121.1  nor <-- BOTTOM MARGIN (filtered?)
+  y_top=  502.3  pdfjs_y=  110.0  relY=0.086  x= 138.8  have <-- BOTTOM MARGIN (filtered?)
+  y_top=  502.3  pdfjs_y=  110.0  relY=0.086  x= 160.7  I <-- BOTTOM MARGIN (filtered?)
+  y_top=  502.3  pdfjs_y=  110.0  relY=0.086  x= 167.5  ever <-- BOTTOM MARGIN (filtered?)
+  y_top=  502.3  pdfjs_y=  110.0  relY=0.086  x= 187.9  heard <-- BOTTOM MARGIN (filtered?)
+  y_top=  502.3  pdfjs_y=  110.0  relY=0.086  x= 214.3  of <-- BOTTOM MARGIN (filtered?)
+  y_top=  502.3  pdfjs_y=  110.0  relY=0.086  x= 225.8  one <-- BOTTOM MARGIN (filtered?)
+  y_top=  502.3  pdfjs_y=  110.0  relY=0.086  x= 244.5  who <-- BOTTOM MARGIN (filtered?)
+  y_top=  502.3  pdfjs_y=  110.0  relY=0.086  x= 265.7  has <-- BOTTOM MARGIN (filtered?)
+  y_top=  502.3  pdfjs_y=  110.0  relY=0.086  x= 282.5  had <-- BOTTOM MARGIN (filtered?)
+  y_top=  502.3  pdfjs_y=  110.0  relY=0.086  x= 300.9  less <-- BOTTOM MARGIN (filtered?)
+  y_top=  514.3  pdfjs_y=   98.0  relY=0.063  x=  75.5  reason <-- BOTTOM MARGIN (filtered?)
+  y_top=  514.3  pdfjs_y=   98.0  relY=0.063  x= 105.3  to <-- BOTTOM MARGIN (filtered?)
+  y_top=  514.3  pdfjs_y=   98.0  relY=0.063  x= 116.5  despair. <-- BOTTOM MARGIN (filtered?)
+  y_top=  514.3  pdfjs_y=   98.0  relY=0.063  x= 150.8  I <-- BOTTOM MARGIN (filtered?)
+  y_top=  514.3  pdfjs_y=   98.0  relY=0.063  x= 157.1  tremble <-- BOTTOM MARGIN (filtered?)
+  y_top=  514.3  pdfjs_y=   98.0  relY=0.063  x= 191.8  in <-- BOTTOM MARGIN (filtered?)
+  y_top=  514.3  pdfjs_y=   98.0  relY=0.063  x= 202.7  my <-- BOTTOM MARGIN (filtered?)
+  y_top=  514.3  pdfjs_y=   98.0  relY=0.063  x= 218.2  gratitude <-- BOTTOM MARGIN (filtered?)
+  y_top=  514.3  pdfjs_y=   98.0  relY=0.063  x= 258.2  to <-- BOTTOM MARGIN (filtered?)
+  y_top=  514.3  pdfjs_y=   98.0  relY=0.063  x= 269.4  providence <-- BOTTOM MARGIN (filtered?)
+  y_top=  544.6  pdfjs_y=   67.7  relY=0.002  x=  53.9  22 <-- BOTTOM MARGIN (filtered?)
+  y_top=  545.8  pdfjs_y=   66.5  relY=0.000  x=  61.2  Autobiography, <-- BOTTOM MARGIN (filtered?)
+  y_top=  545.8  pdfjs_y=   66.5  relY=0.000  x= 118.1  I, <-- BOTTOM MARGIN (filtered?)
+  y_top=  545.8  pdfjs_y=   66.5  relY=0.000  x= 125.2  p. <-- BOTTOM MARGIN (filtered?)
+  y_top=  545.8  pdfjs_y=   66.5  relY=0.000  x= 133.7  339. <-- BOTTOM MARGIN (filtered?)
+
+
+=== PAGE 32 (height=612.3) ===
+Total words: 442
+
+  PDF.js Y range: min=66.5, max=570.1, range=503.6
+
+   pdfplumber_top_y   pdfjs_y    relY       x  text
+  y_top=   42.5  pdfjs_y=  569.8  relY=0.999  x= 161.1  introduction <-- TOP MARGIN (filtered?)
+  y_top=   42.2  pdfjs_y=  570.1  relY=1.000  x= 320.3  xxxi <-- TOP MARGIN (filtered?)
+  y_top=   60.1  pdfjs_y=  552.2  relY=0.964  x=  75.2  when <-- TOP MARGIN (filtered?)
+  y_top=   60.1  pdfjs_y=  552.2  relY=0.964  x= 101.7  I <-- TOP MARGIN (filtered?)
+  y_top=   60.1  pdfjs_y=  552.2  relY=0.964  x= 109.0  think <-- TOP MARGIN (filtered?)
+  y_top=   60.1  pdfjs_y=  552.2  relY=0.964  x= 134.5  of <-- TOP MARGIN (filtered?)
+  y_top=   60.1  pdfjs_y=  552.2  relY=0.964  x= 146.6  the <-- TOP MARGIN (filtered?)
+  y_top=   60.1  pdfjs_y=  552.2  relY=0.964  x= 163.7  path <-- TOP MARGIN (filtered?)
+  y_top=   60.1  pdfjs_y=  552.2  relY=0.964  x= 185.7  that <-- TOP MARGIN (filtered?)
+  y_top=   60.1  pdfjs_y=  552.2  relY=0.964  x= 205.7  seems <-- TOP MARGIN (filtered?)
+  y_top=   60.1  pdfjs_y=  552.2  relY=0.964  x= 234.4  marked <-- TOP MARGIN (filtered?)
+  y_top=   60.1  pdfjs_y=  552.2  relY=0.964  x= 269.2  out <-- TOP MARGIN (filtered?)
+  y_top=   60.1  pdfjs_y=  552.2  relY=0.964  x= 287.0  for <-- TOP MARGIN (filtered?)
+  y_top=   60.1  pdfjs_y=  552.2  relY=0.964  x= 302.7  me <-- TOP MARGIN (filtered?)
+  y_top=   72.1  pdfjs_y=  540.2  relY=0.941  x=  75.6  along <-- TOP MARGIN (filtered?)
+  y_top=   72.1  pdfjs_y=  540.2  relY=0.941  x= 100.3  the <-- TOP MARGIN (filtered?)
+  y_top=   72.1  pdfjs_y=  540.2  relY=0.941  x= 115.7  edge <-- TOP MARGIN (filtered?)
+  y_top=   72.1  pdfjs_y=  540.2  relY=0.941  x= 137.0  of <-- TOP MARGIN (filtered?)
+  y_top=   70.9  pdfjs_y=  541.4  relY=0.943  x= 147.4  peril.23 <-- TOP MARGIN (filtered?)
+  y_top=   88.7  pdfjs_y=  523.6  relY=0.908  x=  53.8  GaltÆs <-- TOP MARGIN (filtered?)
+  y_top=   88.7  pdfjs_y=  523.6  relY=0.908  x=  79.9  characteristic <-- TOP MARGIN (filtered?)
+  y_top=   88.7  pdfjs_y=  523.6  relY=0.908  x= 137.3  optimism <-- TOP MARGIN (filtered?)
+  y_top=   88.7  pdfjs_y=  523.6  relY=0.908  x= 179.8  about <-- TOP MARGIN (filtered?)
+  y_top=   88.7  pdfjs_y=  523.6  relY=0.908  x= 206.3  the <-- TOP MARGIN (filtered?)
+  y_top=   88.7  pdfjs_y=  523.6  relY=0.908  x= 222.4  coming <-- TOP MARGIN (filtered?)
+  y_top=   88.7  pdfjs_y=  523.6  relY=0.908  x= 256.1  of <-- TOP MARGIN (filtered?)
+  y_top=   88.7  pdfjs_y=  523.6  relY=0.908  x= 267.1  better <-- TOP MARGIN (filtered?)
+  y_top=   88.7  pdfjs_y=  523.6  relY=0.908  x= 294.0  times <-- TOP MARGIN (filtered?)
+  y_top=   88.7  pdfjs_y=  523.6  relY=0.908  x= 319.3  is <-- TOP MARGIN (filtered?)
+  y_top=   88.7  pdfjs_y=  523.6  relY=0.908  x= 328.6  of <-- TOP MARGIN (filtered?)
+  y_top=  100.7  pdfjs_y=  511.6  relY=0.884  x=  54.3  a <-- TOP MARGIN (filtered?)
+  y_top=  100.7  pdfjs_y=  511.6  relY=0.884  x=  61.6  piece <-- TOP MARGIN (filtered?)
+  y_top=  100.7  pdfjs_y=  511.6  relY=0.884  x=  86.1  with <-- TOP MARGIN (filtered?)
+  y_top=  100.7  pdfjs_y=  511.6  relY=0.884  x= 107.5  the <-- TOP MARGIN (filtered?)
+  y_top=  100.7  pdfjs_y=  511.6  relY=0.884  x= 123.7  resilience <-- TOP MARGIN (filtered?)
+  y_top=  100.7  pdfjs_y=  511.6  relY=0.884  x= 165.3  that <-- TOP MARGIN (filtered?)
+  y_top=  100.7  pdfjs_y=  511.6  relY=0.884  x= 184.4  made <-- TOP MARGIN (filtered?)
+  y_top=  100.7  pdfjs_y=  511.6  relY=0.884  x= 209.9  it <-- TOP MARGIN (filtered?)
+  y_top=  100.7  pdfjs_y=  511.6  relY=0.884  x= 218.6  possible <-- TOP MARGIN (filtered?)
+  y_top=  100.7  pdfjs_y=  511.6  relY=0.884  x= 255.0  for <-- TOP MARGIN (filtered?)
+  y_top=  100.7  pdfjs_y=  511.6  relY=0.884  x= 269.7  him <-- TOP MARGIN (filtered?)
+  y_top=  100.7  pdfjs_y=  511.6  relY=0.884  x= 288.9  to <-- TOP MARGIN (filtered?)
+  y_top=  100.7  pdfjs_y=  511.6  relY=0.884  x= 300.3  continue <-- TOP MARGIN (filtered?)
+  y_top=  112.7  pdfjs_y=  499.6  relY=0.860  x=  53.9  writing
+  y_top=  112.7  pdfjs_y=  499.6  relY=0.860  x=  85.4  through
+  y_top=  112.7  pdfjs_y=  499.6  relY=0.860  x= 120.3  depression
+  y_top=  112.7  pdfjs_y=  499.6  relY=0.860  x= 166.6  to
+  y_top=  112.7  pdfjs_y=  499.6  relY=0.860  x= 176.9  produce
+  y_top=  112.7  pdfjs_y=  499.5  relY=0.860  x= 212.8  The
+  y_top=  112.7  pdfjs_y=  499.6  relY=0.860  x= 229.0  Omen.
+  y_top=  112.7  pdfjs_y=  499.6  relY=0.860  x= 257.3  His
+  y_top=  112.7  pdfjs_y=  499.6  relY=0.860  x= 273.7  friend
+  y_top=  112.7  pdfjs_y=  499.6  relY=0.860  x= 300.3  and
+  y_top=  112.7  pdfjs_y=  499.6  relY=0.860  x= 317.5  early
+  y_top=  124.7  pdfjs_y=  487.6  relY=0.836  x=  54.3  biographer
+  y_top=  124.7  pdfjs_y=  487.6  relY=0.836  x= 101.8  D.
+  y_top=  124.7  pdfjs_y=  487.6  relY=0.836  x= 113.9  M.
+  y_top=  124.7  pdfjs_y=  487.6  relY=0.836  x= 128.0  Moir,
+  y_top=  124.7  pdfjs_y=  487.6  relY=0.836  x= 153.2  aware
+  y_top=  124.7  pdfjs_y=  487.6  relY=0.836  x= 179.3  of
+  y_top=  124.7  pdfjs_y=  487.6  relY=0.836  x= 190.1  the
+  y_top=  124.7  pdfjs_y=  487.6  relY=0.836  x= 205.9  difficult
+  y_top=  124.7  pdfjs_y=  487.6  relY=0.836  x= 240.4  circumstances
+  y_top=  124.7  pdfjs_y=  487.6  relY=0.836  x= 301.1  in
+  y_top=  124.7  pdfjs_y=  487.6  relY=0.836  x= 311.8  which
+  y_top=  136.7  pdfjs_y=  475.6  relY=0.812  x=  54.3  the
+  y_top=  136.7  pdfjs_y=  475.6  relY=0.812  x=  71.2  tale
+  y_top=  136.7  pdfjs_y=  475.6  relY=0.812  x=  89.6  was
+  y_top=  136.7  pdfjs_y=  475.6  relY=0.812  x= 108.5  written,
+  y_top=  136.7  pdfjs_y=  475.6  relY=0.812  x= 143.9  refers
+  y_top=  136.7  pdfjs_y=  475.6  relY=0.812  x= 170.4  to
+  y_top=  136.7  pdfjs_y=  475.6  relY=0.812  x= 182.5  it
+  y_top=  136.7  pdfjs_y=  475.6  relY=0.812  x= 191.9  as
+  y_top=  136.7  pdfjs_y=  475.6  relY=0.812  x= 203.8  ôone
+  y_top=  136.7  pdfjs_y=  475.6  relY=0.812  x= 226.0  of
+  y_top=  136.7  pdfjs_y=  475.6  relY=0.812  x= 237.9  the
+  y_top=  136.7  pdfjs_y=  475.6  relY=0.812  x= 254.8  most
+  y_top=  136.7  pdfjs_y=  475.6  relY=0.812  x= 279.1  beautiful,
+  y_top=  136.7  pdfjs_y=  475.6  relY=0.812  x= 321.5  and
+  y_top=  148.7  pdfjs_y=  463.6  relY=0.789  x=  54.3  perhaps
+  y_top=  148.7  pdfjs_y=  463.6  relY=0.789  x=  88.9  the
+  y_top=  148.7  pdfjs_y=  463.6  relY=0.789  x= 104.3  most
+  y_top=  148.7  pdfjs_y=  463.6  relY=0.789  x= 127.0  elaborately
+  y_top=  148.7  pdfjs_y=  463.6  relY=0.789  x= 174.1  finished
+  y_top=  148.7  pdfjs_y=  463.6  relY=0.789  x= 209.0  of
+  y_top=  148.7  pdfjs_y=  463.6  relY=0.789  x= 219.4  his
+  y_top=  147.4  pdfjs_y=  464.9  relY=0.791  x= 233.4  productions.ö24
+  y_top=  160.7  pdfjs_y=  451.6  relY=0.765  x=  68.0  Galt
+  y_top=  160.7  pdfjs_y=  451.6  relY=0.765  x=  89.4  himself
+  y_top=  160.7  pdfjs_y=  451.6  relY=0.765  x= 123.1  commented
+  y_top=  160.7  pdfjs_y=  451.6  relY=0.765  x= 176.2  that
+  y_top=  160.7  pdfjs_y=  451.5  relY=0.764  x= 195.9  The
+  y_top=  160.7  pdfjs_y=  451.5  relY=0.764  x= 214.0  Omen
+  y_top=  160.7  pdfjs_y=  451.6  relY=0.765  x= 241.7  is
+  y_top=  160.7  pdfjs_y=  451.6  relY=0.765  x= 251.8  ônot
+  y_top=  160.7  pdfjs_y=  451.6  relY=0.765  x= 273.0  à
+  y_top=  160.7  pdfjs_y=  451.6  relY=0.765  x= 287.5  at
+  y_top=  160.7  pdfjs_y=  451.6  relY=0.765  x= 298.6  all
+  y_top=  160.7  pdfjs_y=  451.6  relY=0.765  x= 311.9  in
+  y_top=  160.7  pdfjs_y=  451.6  relY=0.765  x= 323.6  the
+  y_top=  172.7  pdfjs_y=  439.6  relY=0.741  x=  54.4  style
+  y_top=  172.7  pdfjs_y=  439.6  relY=0.741  x=  75.5  for
+  y_top=  172.7  pdfjs_y=  439.6  relY=0.741  x=  89.3  which
+  y_top=  172.7  pdfjs_y=  439.6  relY=0.741  x= 116.4  I
+  y_top=  172.7  pdfjs_y=  439.6  relY=0.741  x= 122.0  am
+  y_top=  172.7  pdfjs_y=  439.6  relY=0.741  x= 136.6  best
+  y_top=  171.4  pdfjs_y=  440.9  relY=0.743  x= 155.5  known.ö25
+  y_top=  172.7  pdfjs_y=  439.6  relY=0.741  x= 196.7  As
+  y_top=  172.7  pdfjs_y=  439.6  relY=0.741  x= 209.5  wide-ranging
+  y_top=  172.7  pdfjs_y=  439.6  relY=0.741  x= 265.6  as
+  y_top=  172.7  pdfjs_y=  439.6  relY=0.741  x= 275.8  his
+  y_top=  172.7  pdfjs_y=  439.6  relY=0.741  x= 289.7  themes
+  y_top=  172.7  pdfjs_y=  439.6  relY=0.741  x= 321.6  and
+  y_top=  184.7  pdfjs_y=  427.6  relY=0.717  x=  54.3  genres
+  y_top=  184.7  pdfjs_y=  427.6  relY=0.717  x=  84.3  had
+  y_top=  184.7  pdfjs_y=  427.6  relY=0.717  x= 102.9  been
+  y_top=  184.7  pdfjs_y=  427.6  relY=0.717  x= 126.3  up
+  y_top=  184.7  pdfjs_y=  427.6  relY=0.717  x= 140.5  to
+  y_top=  184.7  pdfjs_y=  427.6  relY=0.717  x= 152.5  this
+  y_top=  184.7  pdfjs_y=  427.6  relY=0.717  x= 171.1  point,
+  y_top=  184.7  pdfjs_y=  427.5  relY=0.717  x= 199.0  The
+  y_top=  184.7  pdfjs_y=  427.5  relY=0.717  x= 216.9  Omen
+  y_top=  184.7  pdfjs_y=  427.6  relY=0.717  x= 244.5  undertakes
+  y_top=  184.7  pdfjs_y=  427.6  relY=0.717  x= 293.5  something
+  y_top=  196.7  pdfjs_y=  415.6  relY=0.693  x=  54.2  different
+  y_top=  196.7  pdfjs_y=  415.6  relY=0.693  x=  91.5  from
+  y_top=  196.7  pdfjs_y=  415.6  relY=0.693  x= 113.9  almost
+  y_top=  196.7  pdfjs_y=  415.6  relY=0.693  x= 143.9  all
+  y_top=  196.7  pdfjs_y=  415.6  relY=0.693  x= 155.9  his
+  y_top=  196.7  pdfjs_y=  415.6  relY=0.693  x= 170.1  previous
+  y_top=  196.7  pdfjs_y=  415.6  relY=0.693  x= 207.8  writing.
+  y_top=  196.7  pdfjs_y=  415.6  relY=0.693  x= 242.0  Its
+  y_top=  196.7  pdfjs_y=  415.6  relY=0.693  x= 254.5  first-person
+  y_top=  196.7  pdfjs_y=  415.6  relY=0.693  x= 304.0  narrator
+  y_top=  208.7  pdfjs_y=  403.6  relY=0.669  x=  54.3  is
+  y_top=  208.7  pdfjs_y=  403.6  relY=0.669  x=  64.4  a
+  y_top=  208.7  pdfjs_y=  403.6  relY=0.669  x=  72.5  young
+  y_top=  208.7  pdfjs_y=  403.6  relY=0.669  x= 101.7  English
+  y_top=  208.7  pdfjs_y=  403.6  relY=0.669  x= 136.2  nobleman
+  y_top=  208.7  pdfjs_y=  403.6  relY=0.669  x= 181.2  named
+  y_top=  208.7  pdfjs_y=  403.6  relY=0.669  x= 213.0  Henry
+  y_top=  208.7  pdfjs_y=  403.6  relY=0.669  x= 243.3  and
+  y_top=  208.7  pdfjs_y=  403.6  relY=0.669  x= 262.3  it
+  y_top=  208.7  pdfjs_y=  403.6  relY=0.669  x= 271.8  is
+  y_top=  208.7  pdfjs_y=  403.6  relY=0.669  x= 281.9  set
+  y_top=  208.7  pdfjs_y=  403.6  relY=0.669  x= 297.1  mainly
+  y_top=  208.7  pdfjs_y=  403.6  relY=0.669  x= 328.8  in
+  y_top=  220.7  pdfjs_y=  391.6  relY=0.646  x=  53.8  Oxford,
+  y_top=  220.7  pdfjs_y=  391.6  relY=0.646  x=  89.4  parts
+  y_top=  220.7  pdfjs_y=  391.6  relY=0.646  x= 113.1  of
+  y_top=  220.7  pdfjs_y=  391.6  relY=0.646  x= 124.6  East
+  y_top=  220.7  pdfjs_y=  391.6  relY=0.646  x= 145.3  Anglia,
+  y_top=  220.7  pdfjs_y=  391.6  relY=0.646  x= 177.5  and
+  y_top=  220.7  pdfjs_y=  391.6  relY=0.646  x= 196.1  the
+  y_top=  220.7  pdfjs_y=  391.6  relY=0.646  x= 212.6  environs
+  y_top=  220.7  pdfjs_y=  391.6  relY=0.646  x= 251.2  of
+  y_top=  220.7  pdfjs_y=  391.6  relY=0.646  x= 262.7  London.
+  y_top=  220.7  pdfjs_y=  391.6  relY=0.646  x= 301.5  The
+  y_top=  220.7  pdfjs_y=  391.6  relY=0.646  x= 320.5  plot
+  y_top=  232.7  pdfjs_y=  379.6  relY=0.622  x=  54.3  features
+  y_top=  232.7  pdfjs_y=  379.6  relY=0.622  x=  87.9  a
+  y_top=  232.7  pdfjs_y=  379.6  relY=0.622  x=  93.9  gothic
+  y_top=  232.7  pdfjs_y=  379.6  relY=0.622  x= 121.2  motif
+  y_top=  232.7  pdfjs_y=  379.6  relY=0.622  x= 145.3  of
+  y_top=  232.7  pdfjs_y=  379.6  relY=0.622  x= 155.1  narrowly
+  y_top=  232.7  pdfjs_y=  379.6  relY=0.622  x= 193.3  averted
+  y_top=  232.7  pdfjs_y=  379.6  relY=0.622  x= 225.0  incest
+  y_top=  232.7  pdfjs_y=  379.6  relY=0.622  x= 250.6  that
+  y_top=  232.7  pdfjs_y=  379.6  relY=0.622  x= 268.2  was
+  y_top=  232.7  pdfjs_y=  379.6  relY=0.622  x= 285.0  new
+  y_top=  232.7  pdfjs_y=  379.6  relY=0.622  x= 303.6  to
+  y_top=  232.7  pdfjs_y=  379.6  relY=0.622  x= 313.6  GaltÆs
+  y_top=  244.7  pdfjs_y=  367.6  relY=0.598  x=  54.0  fiction,
+  y_top=  244.7  pdfjs_y=  367.6  relY=0.598  x=  85.0  although
+  y_top=  244.7  pdfjs_y=  367.6  relY=0.598  x= 123.7  he
+  y_top=  244.7  pdfjs_y=  367.6  relY=0.598  x= 135.8  had
+  y_top=  244.7  pdfjs_y=  367.6  relY=0.598  x= 153.1  paid
+  y_top=  244.7  pdfjs_y=  367.6  relY=0.598  x= 173.0  considerable
+  y_top=  244.7  pdfjs_y=  367.6  relY=0.598  x= 227.1  attention
+  y_top=  244.7  pdfjs_y=  367.6  relY=0.598  x= 266.4  to
+  y_top=  244.7  pdfjs_y=  367.6  relY=0.598  x= 276.9  similar
+  y_top=  244.7  pdfjs_y=  367.6  relY=0.598  x= 306.9  themes
+  y_top=  256.7  pdfjs_y=  355.6  relY=0.574  x=  54.3  in
+  y_top=  256.7  pdfjs_y=  355.6  relY=0.574  x=  64.2  ByronÆs
+  y_top=  256.7  pdfjs_y=  355.6  relY=0.574  x=  96.1  poetry.
+  y_top=  256.7  pdfjs_y=  355.6  relY=0.574  x= 126.7  Recalling
+  y_top=  256.7  pdfjs_y=  355.6  relY=0.574  x= 166.9  the
+  y_top=  256.7  pdfjs_y=  355.6  relY=0.574  x= 182.0  origins
+  y_top=  256.7  pdfjs_y=  355.6  relY=0.574  x= 212.3  of
+  y_top=  256.7  pdfjs_y=  355.5  relY=0.574  x= 222.4  The
+  y_top=  256.7  pdfjs_y=  355.5  relY=0.574  x= 238.7  Omen
+  y_top=  256.7  pdfjs_y=  355.6  relY=0.574  x= 264.7  in
+  y_top=  256.7  pdfjs_y=  355.6  relY=0.574  x= 274.7  his
+  y_top=  256.7  pdfjs_y=  355.5  relY=0.574  x= 288.4  Literary
+  y_top=  256.7  pdfjs_y=  355.6  relY=0.574  x= 322.0  Life,
+  y_top=  268.7  pdfjs_y=  343.6  relY=0.550  x=  53.8  Galt
+  y_top=  268.7  pdfjs_y=  343.6  relY=0.550  x=  73.9  claims
+  y_top=  268.7  pdfjs_y=  343.6  relY=0.550  x= 102.1  that
+  y_top=  268.7  pdfjs_y=  343.6  relY=0.550  x= 120.5  ôit
+  y_top=  268.7  pdfjs_y=  343.6  relY=0.550  x= 132.3  is
+  y_top=  268.7  pdfjs_y=  343.6  relY=0.550  x= 141.0  founded
+  y_top=  268.7  pdfjs_y=  343.6  relY=0.550  x= 177.8  on
+  y_top=  268.7  pdfjs_y=  343.6  relY=0.550  x= 190.9  the
+  y_top=  268.7  pdfjs_y=  343.6  relY=0.550  x= 206.3  story
+  y_top=  268.7  pdfjs_y=  343.6  relY=0.550  x= 229.4  to
+  y_top=  268.7  pdfjs_y=  343.6  relY=0.550  x= 240.1  which
+  y_top=  268.7  pdfjs_y=  343.6  relY=0.550  x= 267.4  I
+  y_top=  268.7  pdfjs_y=  343.6  relY=0.550  x= 273.1  alluded
+  y_top=  268.7  pdfjs_y=  343.6  relY=0.550  x= 305.8  to
+  y_top=  268.7  pdfjs_y=  343.6  relY=0.550  x= 316.4  Lord
+  y_top=  280.7  pdfjs_y=  331.6  relY=0.526  x=  53.9  Byron
+  y_top=  280.7  pdfjs_y=  331.6  relY=0.526  x=  82.4  on
+  y_top=  280.7  pdfjs_y=  331.6  relY=0.526  x=  96.5  speaking
+  y_top=  280.7  pdfjs_y=  331.6  relY=0.526  x= 135.7  one
+  y_top=  280.7  pdfjs_y=  331.6  relY=0.526  x= 154.4  day
+  y_top=  280.7  pdfjs_y=  331.6  relY=0.526  x= 171.9  of
+  y_top=  280.7  pdfjs_y=  331.6  relY=0.526  x= 183.4  the
+  y_top=  280.7  pdfjs_y=  331.6  relY=0.526  x= 199.8  æBride
+  y_top=  280.7  pdfjs_y=  331.6  relY=0.526  x= 227.9  of
+  y_top=  279.4  pdfjs_y=  332.9  relY=0.529  x= 239.4  AbydosÆ.ö26
+  y_top=  280.7  pdfjs_y=  331.6  relY=0.526  x= 285.8  The
+  y_top=  280.7  pdfjs_y=  331.6  relY=0.526  x= 304.8  story
+  y_top=  280.7  pdfjs_y=  331.6  relY=0.526  x= 328.8  in
+  y_top=  292.7  pdfjs_y=  319.6  relY=0.503  x=  54.2  question
+  y_top=  292.7  pdfjs_y=  319.6  relY=0.503  x=  92.5  is
+  y_top=  292.7  pdfjs_y=  319.6  relY=0.503  x= 101.4  a
+  y_top=  292.7  pdfjs_y=  319.6  relY=0.503  x= 108.3  four-volume
+  y_top=  292.7  pdfjs_y=  319.6  relY=0.503  x= 161.5  novel
+  y_top=  292.7  pdfjs_y=  319.6  relY=0.503  x= 186.4  entitled
+  y_top=  292.7  pdfjs_y=  319.5  relY=0.502  x= 220.5  The
+  y_top=  292.7  pdfjs_y=  319.5  relY=0.502  x= 237.4  Three
+  y_top=  292.7  pdfjs_y=  319.5  relY=0.502  x= 261.4  B
+  y_top=  292.7  pdfjs_y=  319.5  relY=0.502  x= 267.6  rothers
+  y_top=  292.7  pdfjs_y=  319.6  relY=0.503  x= 296.8  by
+  y_top=  292.7  pdfjs_y=  319.6  relY=0.503  x= 309.3  Joshua
+  y_top=  304.7  pdfjs_y=  307.6  relY=0.479  x=  53.9  Pickersgill
+  y_top=  304.7  pdfjs_y=  307.6  relY=0.479  x=  99.4  that
+  y_top=  304.7  pdfjs_y=  307.6  relY=0.479  x= 118.5  was
+  y_top=  304.7  pdfjs_y=  307.6  relY=0.479  x= 136.6  published
+  y_top=  304.7  pdfjs_y=  307.6  relY=0.479  x= 180.1  in
+  y_top=  304.7  pdfjs_y=  307.6  relY=0.479  x= 191.1  1803.
+  y_top=  304.7  pdfjs_y=  307.6  relY=0.479  x= 213.5  Galt
+  y_top=  304.7  pdfjs_y=  307.6  relY=0.479  x= 234.2  was
+  y_top=  304.7  pdfjs_y=  307.6  relY=0.479  x= 252.4  so
+  y_top=  304.7  pdfjs_y=  307.6  relY=0.479  x= 264.4  struck
+  y_top=  304.7  pdfjs_y=  307.6  relY=0.479  x= 292.8  by
+  y_top=  304.7  pdfjs_y=  307.6  relY=0.479  x= 305.7  similari-
+  y_top=  316.7  pdfjs_y=  295.6  relY=0.455  x=  54.3  ties
+  y_top=  316.7  pdfjs_y=  295.6  relY=0.455  x=  70.9  between
+  y_top=  316.7  pdfjs_y=  295.5  relY=0.455  x= 108.1  The
+  y_top=  316.7  pdfjs_y=  295.5  relY=0.455  x= 124.9  Bride
+  y_top=  316.7  pdfjs_y=  295.5  relY=0.455  x= 148.6  of
+  y_top=  316.7  pdfjs_y=  295.5  relY=0.455  x= 158.3  Abydos
+  y_top=  316.7  pdfjs_y=  295.6  relY=0.455  x= 189.2  and
+  y_top=  316.7  pdfjs_y=  295.6  relY=0.455  x= 206.9  this
+  y_top=  316.7  pdfjs_y=  295.6  relY=0.455  x= 224.4  convoluted
+  y_top=  316.7  pdfjs_y=  295.6  relY=0.455  x= 272.7  gothic
+  y_top=  316.7  pdfjs_y=  295.6  relY=0.455  x= 300.9  romance
+  y_top=  328.7  pdfjs_y=  283.6  relY=0.431  x=  54.3  that
+  y_top=  328.7  pdfjs_y=  283.6  relY=0.431  x=  73.1  he
+  y_top=  328.7  pdfjs_y=  283.6  relY=0.431  x=  85.9  returned
+  y_top=  328.7  pdfjs_y=  283.6  relY=0.431  x= 124.3  several
+  y_top=  328.7  pdfjs_y=  283.6  relY=0.431  x= 154.9  times
+  y_top=  328.7  pdfjs_y=  283.6  relY=0.431  x= 180.2  to
+  y_top=  328.7  pdfjs_y=  283.6  relY=0.431  x= 191.3  the
+  y_top=  328.7  pdfjs_y=  283.6  relY=0.431  x= 207.3  question
+  y_top=  328.7  pdfjs_y=  283.6  relY=0.431  x= 245.9  of
+  y_top=  328.7  pdfjs_y=  283.6  relY=0.431  x= 256.9  whether
+  y_top=  328.7  pdfjs_y=  283.6  relY=0.431  x= 293.6  Byron
+  y_top=  328.7  pdfjs_y=  283.6  relY=0.431  x= 321.7  had
+  y_top=  340.7  pdfjs_y=  271.6  relY=0.407  x=  54.3  plagiarized
+  y_top=  340.7  pdfjs_y=  271.5  relY=0.407  x= 100.9  The
+  y_top=  340.7  pdfjs_y=  271.5  relY=0.407  x= 117.4  Three
+  y_top=  340.7  pdfjs_y=  271.5  relY=0.407  x= 141.1  Brothers
+  y_top=  340.7  pdfjs_y=  271.6  relY=0.407  x= 176.0  or
+  y_top=  340.7  pdfjs_y=  271.6  relY=0.407  x= 187.0  perhaps
+  y_top=  340.7  pdfjs_y=  271.6  relY=0.407  x= 221.5  even
+  y_top=  340.7  pdfjs_y=  271.6  relY=0.407  x= 242.7  written
+  y_top=  340.7  pdfjs_y=  271.6  relY=0.407  x= 274.3  it
+  y_top=  340.7  pdfjs_y=  271.6  relY=0.407  x= 282.1  himself
+  y_top=  340.7  pdfjs_y=  271.6  relY=0.407  x= 314.3  when
+  y_top=  352.7  pdfjs_y=  259.6  relY=0.383  x=  53.8  very
+  y_top=  351.4  pdfjs_y=  260.9  relY=0.386  x=  73.7  young.27
+  y_top=  364.7  pdfjs_y=  247.6  relY=0.360  x=  67.8  While
+  y_top=  364.7  pdfjs_y=  247.6  relY=0.360  x=  95.9  Galt
+  y_top=  364.7  pdfjs_y=  247.6  relY=0.360  x= 116.3  intimates
+  y_top=  364.7  pdfjs_y=  247.6  relY=0.360  x= 156.8  that
+  y_top=  364.7  pdfjs_y=  247.5  relY=0.359  x= 175.5  The
+  y_top=  364.7  pdfjs_y=  247.5  relY=0.359  x= 192.5  Omen
+  y_top=  364.7  pdfjs_y=  247.6  relY=0.360  x= 219.2  also
+  y_top=  364.7  pdfjs_y=  247.6  relY=0.360  x= 238.0  derives
+  y_top=  364.7  pdfjs_y=  247.6  relY=0.360  x= 269.8  from
+  y_top=  364.7  pdfjs_y=  247.6  relY=0.360  x= 292.4  this
+  y_top=  364.7  pdfjs_y=  247.6  relY=0.360  x= 310.1  source,
+  y_top=  376.7  pdfjs_y=  235.6  relY=0.336  x=  54.3  any
+  y_top=  376.7  pdfjs_y=  235.6  relY=0.336  x=  70.8  resemblance
+  y_top=  376.7  pdfjs_y=  235.6  relY=0.336  x= 124.3  to
+  y_top=  376.7  pdfjs_y=  235.5  relY=0.336  x= 134.9  The
+  y_top=  376.7  pdfjs_y=  235.5  relY=0.336  x= 151.4  Three
+  y_top=  376.7  pdfjs_y=  235.5  relY=0.336  x= 175.2  Brothers
+  y_top=  376.7  pdfjs_y=  235.6  relY=0.336  x= 210.3  is
+  y_top=  376.7  pdfjs_y=  235.6  relY=0.336  x= 218.8  very
+  y_top=  376.7  pdfjs_y=  235.6  relY=0.336  x= 238.7  vague.
+  y_top=  376.7  pdfjs_y=  235.6  relY=0.336  x= 266.7  Instead,
+  y_top=  376.7  pdfjs_y=  235.6  relY=0.336  x= 301.0  there
+  y_top=  376.7  pdfjs_y=  235.6  relY=0.336  x= 324.4  are
+  y_top=  388.7  pdfjs_y=  223.6  relY=0.312  x=  54.4  stronger
+  y_top=  388.7  pdfjs_y=  223.6  relY=0.312  x=  90.1  connections
+  y_top=  388.7  pdfjs_y=  223.6  relY=0.312  x= 142.2  to
+  y_top=  388.7  pdfjs_y=  223.6  relY=0.312  x= 152.5  themes
+  y_top=  388.7  pdfjs_y=  223.6  relY=0.312  x= 184.1  in
+  y_top=  388.7  pdfjs_y=  223.6  relY=0.312  x= 193.9  some
+  y_top=  388.7  pdfjs_y=  223.6  relY=0.312  x= 217.7  of
+  y_top=  388.7  pdfjs_y=  223.6  relY=0.312  x= 227.7  his
+  y_top=  388.7  pdfjs_y=  223.6  relY=0.312  x= 241.4  own
+  y_top=  388.7  pdfjs_y=  223.6  relY=0.312  x= 261.1  earlier
+  y_top=  388.7  pdfjs_y=  223.6  relY=0.312  x= 288.7  fiction.
+  y_top=  388.7  pdfjs_y=  223.6  relY=0.312  x= 319.2  Galt
+  y_top=  400.7  pdfjs_y=  211.6  relY=0.288  x=  54.3  had
+  y_top=  400.7  pdfjs_y=  211.6  relY=0.288  x=  73.2  long
+  y_top=  400.7  pdfjs_y=  211.6  relY=0.288  x=  95.1  been
+  y_top=  400.7  pdfjs_y=  211.6  relY=0.288  x= 118.8  interested
+  y_top=  400.7  pdfjs_y=  211.6  relY=0.288  x= 163.0  in
+  y_top=  400.7  pdfjs_y=  211.6  relY=0.288  x= 174.9  premonitions,
+  y_top=  400.7  pdfjs_y=  211.6  relY=0.288  x= 236.6  extrasensory
+  y_top=  400.7  pdfjs_y=  211.6  relY=0.288  x= 292.3  perception,
+  y_top=  412.7  pdfjs_y=  199.6  relY=0.264  x=  54.3  and
+  y_top=  412.7  pdfjs_y=  199.6  relY=0.264  x=  72.1  semi-mystical
+  y_top=  412.7  pdfjs_y=  199.6  relY=0.264  x= 130.7  sympathies
+  y_top=  412.7  pdfjs_y=  199.6  relY=0.264  x= 179.4  û
+  y_top=  412.7  pdfjs_y=  199.6  relY=0.264  x= 187.3  as
+  y_top=  412.7  pdfjs_y=  199.5  relY=0.264  x= 197.9  The
+  y_top=  412.7  pdfjs_y=  199.6  relY=0.264  x= 214.8  OmenÆs
+  y_top=  412.7  pdfjs_y=  199.6  relY=0.264  x= 246.6  narrator
+  y_top=  412.7  pdfjs_y=  199.6  relY=0.264  x= 282.3  puts
+  y_top=  412.7  pdfjs_y=  199.6  relY=0.264  x= 302.5  it,
+  y_top=  412.7  pdfjs_y=  199.6  relY=0.264  x= 313.0  in
+  y_top=  412.7  pdfjs_y=  199.6  relY=0.264  x= 323.6  the
+  y_top=  424.7  pdfjs_y=  187.6  relY=0.240  x=  54.3  belief
+  y_top=  424.7  pdfjs_y=  187.6  relY=0.240  x=  79.6  that
+  y_top=  424.7  pdfjs_y=  187.6  relY=0.240  x=  98.4  the
+  y_top=  424.7  pdfjs_y=  187.6  relY=0.240  x= 114.3  mind
+  y_top=  424.7  pdfjs_y=  187.6  relY=0.240  x= 138.8  may
+  y_top=  424.7  pdfjs_y=  187.6  relY=0.240  x= 158.7  be
+  y_top=  424.7  pdfjs_y=  187.6  relY=0.240  x= 171.3  ôendowed
+  y_top=  424.7  pdfjs_y=  187.6  relY=0.240  x= 214.9  with
+  y_top=  424.7  pdfjs_y=  187.6  relY=0.240  x= 236.1  other
+  y_top=  424.7  pdfjs_y=  187.6  relY=0.240  x= 261.0  faculties
+  y_top=  424.7  pdfjs_y=  187.6  relY=0.240  x= 297.5  of
+  y_top=  424.7  pdfjs_y=  187.6  relY=0.240  x= 308.5  percep-
+  y_top=  436.7  pdfjs_y=  175.6  relY=0.217  x=  54.3  tion
+  y_top=  436.7  pdfjs_y=  175.6  relY=0.217  x=  74.2  than
+  y_top=  436.7  pdfjs_y=  175.6  relY=0.217  x=  95.8  those
+  y_top=  436.7  pdfjs_y=  175.6  relY=0.217  x= 121.4  of
+  y_top=  436.7  pdfjs_y=  175.6  relY=0.217  x= 132.8  the
+  y_top=  436.7  pdfjs_y=  175.6  relY=0.217  x= 149.2  corporeal
+  y_top=  436.7  pdfjs_y=  175.6  relY=0.217  x= 191.6  sensesö
+  y_top=  436.7  pdfjs_y=  175.6  relY=0.217  x= 224.5  (237).
+  y_top=  436.7  pdfjs_y=  175.6  relY=0.217  x= 251.9  In
+  y_top=  436.7  pdfjs_y=  175.6  relY=0.217  x= 263.8  his
+  y_top=  436.7  pdfjs_y=  175.5  relY=0.216  x= 278.8  Autobiography
+  y_top=  460.6  pdfjs_y=  151.7  relY=0.169  x=  53.9  23
+  y_top=  461.8  pdfjs_y=  150.5  relY=0.167  x=  61.6  Galt
+  y_top=  461.8  pdfjs_y=  150.5  relY=0.167  x=  80.3  to
+  y_top=  461.8  pdfjs_y=  150.5  relY=0.167  x=  90.5  Mrs.
+  y_top=  461.8  pdfjs_y=  150.5  relY=0.167  x= 110.0  Macfie,
+  y_top=  461.8  pdfjs_y=  150.5  relY=0.167  x= 139.8  13
+  y_top=  461.8  pdfjs_y=  150.5  relY=0.167  x= 149.1  January
+  y_top=  461.8  pdfjs_y=  150.5  relY=0.167  x= 180.1  1826,
+  y_top=  461.8  pdfjs_y=  150.5  relY=0.167  x= 200.2  MS
+  y_top=  461.8  pdfjs_y=  150.5  relY=0.167  x= 216.1  A277054,
+  y_top=  461.8  pdfjs_y=  150.5  relY=0.167  x= 252.9  H.
+  y_top=  461.8  pdfjs_y=  150.5  relY=0.167  x= 264.9  B.
+  y_top=  461.8  pdfjs_y=  150.5  relY=0.167  x= 274.9  Timothy
+  y_top=  461.8  pdfjs_y=  150.5  relY=0.167  x= 310.2  Collec-
+  y_top=  473.8  pdfjs_y=  138.5  relY=0.143  x=  53.9  tion,
+  y_top=  473.8  pdfjs_y=  138.5  relY=0.143  x=  73.1  University
+  y_top=  473.8  pdfjs_y=  138.5  relY=0.143  x= 113.9  of
+  y_top=  473.8  pdfjs_y=  138.5  relY=0.143  x= 123.3  Guelph
+  y_top=  473.8  pdfjs_y=  138.5  relY=0.143  x= 153.4  Library.
+  y_top=  484.6  pdfjs_y=  127.7  relY=0.122  x=  53.9  24
+  y_top=  485.8  pdfjs_y=  126.5  relY=0.119  x=  61.3  ôBiographical <-- BOTTOM MARGIN (filtered?)
+  y_top=  485.8  pdfjs_y=  126.5  relY=0.119  x= 113.9  Memoir <-- BOTTOM MARGIN (filtered?)
+  y_top=  485.8  pdfjs_y=  126.5  relY=0.119  x= 146.4  of <-- BOTTOM MARGIN (filtered?)
+  y_top=  485.8  pdfjs_y=  126.5  relY=0.119  x= 155.8  the <-- BOTTOM MARGIN (filtered?)
+  y_top=  485.8  pdfjs_y=  126.5  relY=0.119  x= 169.8  Author,ö <-- BOTTOM MARGIN (filtered?)
+  y_top=  485.8  pdfjs_y=  126.5  relY=0.119  x= 203.2  The <-- BOTTOM MARGIN (filtered?)
+  y_top=  485.8  pdfjs_y=  126.5  relY=0.119  x= 218.2  Annals <-- BOTTOM MARGIN (filtered?)
+  y_top=  485.8  pdfjs_y=  126.5  relY=0.119  x= 245.1  of <-- BOTTOM MARGIN (filtered?)
+  y_top=  485.8  pdfjs_y=  126.5  relY=0.119  x= 253.7  the <-- BOTTOM MARGIN (filtered?)
+  y_top=  485.8  pdfjs_y=  126.5  relY=0.119  x= 266.4  Parish <-- BOTTOM MARGIN (filtered?)
+  y_top=  485.8  pdfjs_y=  126.5  relY=0.119  x= 291.0  and <-- BOTTOM MARGIN (filtered?)
+  y_top=  485.8  pdfjs_y=  126.5  relY=0.119  x= 306.6  The <-- BOTTOM MARGIN (filtered?)
+  y_top=  485.8  pdfjs_y=  126.5  relY=0.119  x= 321.6  Ayr- <-- BOTTOM MARGIN (filtered?)
+  y_top=  497.8  pdfjs_y=  114.5  relY=0.095  x=  53.9  shire <-- BOTTOM MARGIN (filtered?)
+  y_top=  497.8  pdfjs_y=  114.5  relY=0.095  x=  73.3  Legatees, <-- BOTTOM MARGIN (filtered?)
+  y_top=  497.8  pdfjs_y=  114.5  relY=0.095  x= 108.0  by <-- BOTTOM MARGIN (filtered?)
+  y_top=  497.8  pdfjs_y=  114.5  relY=0.095  x= 120.1  John <-- BOTTOM MARGIN (filtered?)
+  y_top=  497.8  pdfjs_y=  114.5  relY=0.095  x= 140.9  Galt <-- BOTTOM MARGIN (filtered?)
+  y_top=  497.8  pdfjs_y=  114.5  relY=0.095  x= 160.1  (Edinburgh <-- BOTTOM MARGIN (filtered?)
+  y_top=  497.8  pdfjs_y=  114.5  relY=0.095  x= 207.1  and <-- BOTTOM MARGIN (filtered?)
+  y_top=  497.8  pdfjs_y=  114.5  relY=0.095  x= 224.0  London: <-- BOTTOM MARGIN (filtered?)
+  y_top=  497.8  pdfjs_y=  114.5  relY=0.095  x= 260.0  Blackwood, <-- BOTTOM MARGIN (filtered?)
+  y_top=  497.8  pdfjs_y=  114.5  relY=0.095  x= 306.5  1841), <-- BOTTOM MARGIN (filtered?)
+  y_top=  497.8  pdfjs_y=  114.5  relY=0.095  x= 330.8  p. <-- BOTTOM MARGIN (filtered?)
+  y_top=  509.8  pdfjs_y=  102.5  relY=0.071  x=  53.9  xxxviii. <-- BOTTOM MARGIN (filtered?)
+  y_top=  520.6  pdfjs_y=   91.7  relY=0.050  x=  53.9  25 <-- BOTTOM MARGIN (filtered?)
+  y_top=  521.8  pdfjs_y=   90.5  relY=0.048  x=  61.1  MS <-- BOTTOM MARGIN (filtered?)
+  y_top=  521.8  pdfjs_y=   90.5  relY=0.048  x=  76.3  A277053, <-- BOTTOM MARGIN (filtered?)
+  y_top=  521.8  pdfjs_y=   90.5  relY=0.048  x= 111.3  H. <-- BOTTOM MARGIN (filtered?)
+  y_top=  521.8  pdfjs_y=   90.5  relY=0.048  x= 122.7  B. <-- BOTTOM MARGIN (filtered?)
+  y_top=  521.8  pdfjs_y=   90.5  relY=0.048  x= 132.2  Timothy <-- BOTTOM MARGIN (filtered?)
+  y_top=  521.8  pdfjs_y=   90.5  relY=0.048  x= 166.9  Collection, <-- BOTTOM MARGIN (filtered?)
+  y_top=  521.8  pdfjs_y=   90.5  relY=0.048  x= 210.5  University <-- BOTTOM MARGIN (filtered?)
+  y_top=  521.8  pdfjs_y=   90.5  relY=0.048  x= 251.3  of <-- BOTTOM MARGIN (filtered?)
+  y_top=  521.8  pdfjs_y=   90.5  relY=0.048  x= 260.7  Guelph <-- BOTTOM MARGIN (filtered?)
+  y_top=  521.8  pdfjs_y=   90.5  relY=0.048  x= 290.8  Library. <-- BOTTOM MARGIN (filtered?)
+  y_top=  532.6  pdfjs_y=   79.7  relY=0.026  x=  53.9  26 <-- BOTTOM MARGIN (filtered?)
+  y_top=  533.8  pdfjs_y=   78.5  relY=0.024  x=  61.4  Literary <-- BOTTOM MARGIN (filtered?)
+  y_top=  533.8  pdfjs_y=   78.5  relY=0.024  x=  92.1  Life, <-- BOTTOM MARGIN (filtered?)
+  y_top=  533.8  pdfjs_y=   78.5  relY=0.024  x= 109.7  I, <-- BOTTOM MARGIN (filtered?)
+  y_top=  533.8  pdfjs_y=   78.5  relY=0.024  x= 116.8  pp. <-- BOTTOM MARGIN (filtered?)
+  y_top=  533.8  pdfjs_y=   78.5  relY=0.024  x= 130.1  269û70; <-- BOTTOM MARGIN (filtered?)
+  y_top=  533.8  pdfjs_y=   78.5  relY=0.024  x= 162.3  see <-- BOTTOM MARGIN (filtered?)
+  y_top=  533.8  pdfjs_y=   78.5  relY=0.024  x= 175.9  also <-- BOTTOM MARGIN (filtered?)
+  y_top=  533.8  pdfjs_y=   78.5  relY=0.024  x= 192.6  II, <-- BOTTOM MARGIN (filtered?)
+  y_top=  533.8  pdfjs_y=   78.5  relY=0.024  x= 203.0  p. <-- BOTTOM MARGIN (filtered?)
+  y_top=  533.8  pdfjs_y=   78.5  relY=0.024  x= 211.4  185. <-- BOTTOM MARGIN (filtered?)
+  y_top=  544.6  pdfjs_y=   67.7  relY=0.002  x=  53.9  27 <-- BOTTOM MARGIN (filtered?)
+  y_top=  545.8  pdfjs_y=   66.5  relY=0.000  x=  61.3  Autobiography, <-- BOTTOM MARGIN (filtered?)
+  y_top=  545.8  pdfjs_y=   66.5  relY=0.000  x= 118.2  II, <-- BOTTOM MARGIN (filtered?)
+  y_top=  545.8  pdfjs_y=   66.5  relY=0.000  x= 128.6  pp. <-- BOTTOM MARGIN (filtered?)
+  y_top=  545.8  pdfjs_y=   66.5  relY=0.000  x= 141.9  179û85 <-- BOTTOM MARGIN (filtered?)
+  y_top=  545.8  pdfjs_y=   66.5  relY=0.000  x= 168.4  and <-- BOTTOM MARGIN (filtered?)
+  y_top=  545.8  pdfjs_y=   66.5  relY=0.000  x= 184.3  224; <-- BOTTOM MARGIN (filtered?)
+  y_top=  545.8  pdfjs_y=   66.5  relY=0.000  x= 202.2  Literary <-- BOTTOM MARGIN (filtered?)
+  y_top=  545.8  pdfjs_y=   66.5  relY=0.000  x= 232.9  Life, <-- BOTTOM MARGIN (filtered?)
+  y_top=  545.8  pdfjs_y=   66.5  relY=0.000  x= 250.4  I, <-- BOTTOM MARGIN (filtered?)
+  y_top=  545.8  pdfjs_y=   66.5  relY=0.000  x= 257.6  pp. <-- BOTTOM MARGIN (filtered?)
+  y_top=  545.8  pdfjs_y=   66.5  relY=0.000  x= 270.9  24 <-- BOTTOM MARGIN (filtered?)
+  y_top=  545.8  pdfjs_y=   66.5  relY=0.000  x= 282.0  and <-- BOTTOM MARGIN (filtered?)
+  y_top=  545.8  pdfjs_y=   66.5  relY=0.000  x= 297.8  307û8. <-- BOTTOM MARGIN (filtered?)
+

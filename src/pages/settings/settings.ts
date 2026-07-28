@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormBuilder, FormGroup, ReactiveFormsModule, FormsModule, Validators } from '@angular/forms';
 import { AuthService } from '../../services/auth';
 import { Library } from '../../services/library';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-settings',
@@ -14,14 +15,17 @@ import { Library } from '../../services/library';
 export class Settings implements OnInit {
   profileForm!: FormGroup;
   showClearModal = signal(false);
+  showDeleteModal = signal(false);
   clearConfirmText = '';
+  deleteConfirmText = '';
   feedbackMsg = signal('');
   isError = signal(false);
 
   constructor(
     private fb: FormBuilder,
     private authService: AuthService,
-    private libraryService: Library
+    private libraryService: Library,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
@@ -61,6 +65,24 @@ export class Settings implements OnInit {
         this.showFeedback('All library data has been cleared.', false);
       },
       error: () => this.showFeedback('Failed to clear library.', true)
+    });
+  }
+
+  deleteAccount(): void {
+    if (this.deleteConfirmText !== 'DELETE ACCOUNT') {
+      this.showFeedback('Please type DELETE ACCOUNT to confirm.', true);
+      return;
+    }
+    this.authService.deleteAccount().subscribe({
+      next: () => {
+        this.showDeleteModal.set(false);
+        this.deleteConfirmText = '';
+        this.router.navigate(['/login']);
+      },
+      error: (err) => {
+        const errorDetail = err?.error?.detail || 'Failed to delete account.';
+        this.showFeedback(errorDetail, true);
+      }
     });
   }
 

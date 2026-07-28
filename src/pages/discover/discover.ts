@@ -50,9 +50,12 @@ export class Discover implements OnInit {
     return this.library.books().some(b => b.key === book.key);
   }
 
-  addBook(book: Book): void {
+  addBook(book: Book, fallbackGenre: string | null = null): void {
     if (!this.isInLibrary(book)) {
-      this.library.addBook(book).subscribe({
+      const genre = (book.subjects && book.subjects.length > 0)
+        ? book.subjects.join(', ')
+        : fallbackGenre;
+      this.library.addBook({ ...book, genre }).subscribe({
         error: (err) => console.error('Failed to add book:', err)
       });
     }

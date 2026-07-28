@@ -3,6 +3,9 @@ import { CommonModule } from '@angular/common';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AuthService } from '../../services/auth';
+import { AbstractControl, ValidationErrors } from '@angular/forms';
+
+
 
 @Component({
   selector: 'app-login',
@@ -26,14 +29,14 @@ export class Login {
     private router: Router
   ) {
     this.loginForm = this.fb.group({
-      name: ['', [Validators.required]],
-      password: ['', [Validators.required, Validators.minLength(6)]]
+      name: ['', [Validators.required, Validators.minLength(3)]],
+      password: ['', [Validators.required, Validators.minLength(6), Validators.maxLength(15)]]
     });
 
     this.signupForm = this.fb.group({
-      name: ['', [Validators.required]],
+      name: ['', [Validators.required, Validators.minLength(3)]],
       email: ['', [Validators.required, Validators.email]],
-      password: ['', [Validators.required, Validators.minLength(6)]]
+      password: ['', [Validators.required, Validators.minLength(6), Validators.maxLength(15)]]
     });
   }
 
@@ -49,8 +52,15 @@ export class Login {
     }
     const { name, password } = this.loginForm.value;
     this.authService.login(name, password).subscribe({
-      next: () => this.router.navigate(['/library']),
-      error: () => this.errorMsg.set('Invalid username or password')
+      next: () => {
+        this.errorMsg.set('');
+        this.successMsg.set('');
+        this.router.navigate(['/library']);
+      },
+      error: () => {
+        this.successMsg.set('');
+        this.errorMsg.set('Invalid username or password');
+      }
     });
   }
 
@@ -63,9 +73,23 @@ export class Login {
       next: () => {
         this.signupForm.reset();
         this.isLoginMode.set(true);
+        this.errorMsg.set('');
         this.successMsg.set('Account created! Please sign in.');
       },
-      error: () => this.errorMsg.set('Username is already registered')
+      error: (err) => {
+        this.successMsg.set('');
+        let msg = 'Username is already registered';
+        const detail = err?.error?.detail;
+        if (typeof detail === 'string') {
+          msg = detail;
+        } else if (Array.isArray(detail) && detail.length > 0) {
+          msg = detail.map(d => {
+            const field = d.loc?.[1] ? `${d.loc[1]}: ` : '';
+            return `${field}${d.msg}`;
+          }).join(', ');
+        }
+        this.errorMsg.set(msg);
+      }
     });
   }
 }

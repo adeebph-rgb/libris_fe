@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { Library } from '../../services/library';
 import { Router } from '@angular/router';
 import { AddBookState } from '../../services/add-book-state';
+import { signal } from '@angular/core';
 
 @Component({
   selector: 'app-add-book',
@@ -16,6 +17,7 @@ export class AddBook {
   bookForm: FormGroup;
   selectedPdfFile: File | null = null; 
   pdfUploadStatus: 'idle' | 'uploading' | 'done' | 'error' = 'idle';
+  errorMsg = signal('');
 
   constructor(
     private fb: FormBuilder,
@@ -43,12 +45,22 @@ export class AddBook {
   onPdfSelected(event: Event): void {
     const input = event.target as HTMLInputElement;
     if (input.files && input.files.length > 0) {
-      this.selectedPdfFile = input.files[0];
-      this.stateService.setSelectedPdfFile(this.selectedPdfFile);
+      const file = input.files[0];
+      if (file.type !== 'application/pdf' && !file.name.toLowerCase().endsWith('.pdf')) {
+        this.errorMsg.set('Please upload a valid PDF file.');
+        this.selectedPdfFile = null;
+        this.stateService.setSelectedPdfFile(null);
+        input.value = '';
+      } else {
+        this.errorMsg.set('');
+        this.selectedPdfFile = file;
+        this.stateService.setSelectedPdfFile(this.selectedPdfFile);
+      }
     }
   }
 
   addBook(): void {
+    this.errorMsg.set('');
     const f = this.bookForm.value;
     this.libraryService.addBook({
       title: f.title,
@@ -73,13 +85,17 @@ export class AddBook {
             },
             error: () => {
               this.pdfUploadStatus = 'error';
+              this.errorMsg.set('PDF upload failed, but the book was saved.');
             }
           });
         } else {
           this.router.navigate(['/library']);     
         }
       },
-      error: (err) => console.error('Failed to add book:', err)
+      error: (err) => {
+        this.errorMsg.set('Failed to add book. Please check required fields.');
+        console.error('Failed to add book:', err);
+      }
     });
   }
 }

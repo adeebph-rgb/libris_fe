@@ -185,6 +185,52 @@
 }
 .time-est {
   color: #34A99D;
+  position: relative;
+  cursor: help;
+  text-decoration: underline dotted #34A99D;
+  text-underline-offset: 3px;
+}
+
+.time-est::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: calc(100% + 8px);
+  right: 0;
+  transform: translateY(4px);
+  background: #2E4A4F;
+  color: #FFF8EE;
+  font-size: 0.72rem;
+  font-weight: 500;
+  padding: 0.4rem 0.65rem;
+  border-radius: 6px;
+  border: 1px solid #E5CB90;
+  white-space: nowrap;
+  box-shadow: 0 6px 18px rgba(46, 74, 79, 0.25);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  z-index: 50;
+}
+
+.time-est::before {
+  content: '';
+  position: absolute;
+  bottom: calc(100% + 2px);
+  right: 14px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #2E4A4F transparent transparent transparent;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  transform: translateY(4px);
+  z-index: 51;
+}
+
+.time-est:hover::after,
+.time-est:hover::before {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .dates-section {

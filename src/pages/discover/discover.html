@@ -55,7 +55,7 @@
                 <app-book-card
                   [book]="book"
                   [inLibrary]="isInLibrary(book)"
-                  (addToLibrary)="addBook(book)"
+                  (addToLibrary)="addBook(book, category.name)"
                   (bookClick)="openBook($event)">
                 </app-book-card>
               }

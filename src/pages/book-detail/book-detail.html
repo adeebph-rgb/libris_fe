@@ -1,4 +1,4 @@
-<div class="min-h-screen detail-page">
+<div class="min-h-screen detail-page mt-12">
 
   @if (loading()) {
     <div class="flex flex-col items-center justify-center min-h-[60vh] gap-4 loading-screen">
@@ -11,20 +11,12 @@
     <div class="flex flex-col items-center justify-center min-h-[60vh] gap-4 error-screen">
       <span class="error-icon text-[3.5rem]">📚</span>
       <p>{{ error() }}</p>
-      <button class="px-4 py-2 border border-[#E5CB90]/60 rounded-md text-[#FFF3C8] text-[0.85rem] font-semibold bg-white/10 cursor-pointer hover:bg-[#E5CB90] hover:text-[#2E4A4F] hover:border-[#E5CB90] active:scale-95 transition-all duration-200" (click)="goBack()">
-        <span>Back to Discover</span>
-      </button>
     </div>
   }
 
   @else if (book()) {
 
-    <div class="flex flex-col gap-6 max-w-[1100px] mx-auto px-6 pb-12 items-start content-wrapper">
-      <div class="pt-5 px-7 pb-0 top-bar">
-        <button class="px-4 py-2 border border-[#E5CB90]/60 rounded-md text-[#FFF3C8] text-[0.85rem] font-semibold bg-white/10 cursor-pointer hover:bg-[#E5CB90] hover:text-[#2E4A4F] hover:border-[#E5CB90] active:scale-95 transition-all duration-200" (click)="goBack()">
-          <span>Back</span>
-        </button>
-      </div>
+    <div class="flex flex-col items-center justify-center gap-6 max-w-[1100px] mx-auto px-6 pb-12 items-start content-wrapper">
 
       <div class="flex flex-col md:flex-row gap-6 md:gap-8 items-start w-full content-row">
         <aside class="flex-none w-full md:w-[240px] flex flex-row flex-wrap md:flex-col md:flex-nowrap gap-4 max-[480px]:flex-col max-[480px]:items-center sidebar">
@@ -137,7 +129,7 @@
                     <div class="flex justify-between text-[0.7rem] progress-meta">
                       <span>{{ progressPercent() }}% complete</span>
                       @if (readingTimeEstimate()) {
-                        <span class="font-semibold time-est">⏳ {{ readingTimeEstimate() }} left</span>
+                        <span class="font-semibold time-est" data-tooltip="Based on an average reading speed of 2.5 minutes per page">{{ readingTimeEstimate() }} to finish</span>
                       }
                     </div>
                   }
@@ -192,7 +184,7 @@
 
         </aside>
 
-        <main class="flex-1 min-w-0 pt-0 md:pt-20 main-info">
+        <main class="flex-1 min-w-0 pt-0  main-info">
 
           <div class="title-section">
             @if (book().seriesName) {

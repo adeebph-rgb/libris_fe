@@ -114,19 +114,11 @@
 .delete-btn {
     background: rgba(46, 74, 79, 0.82);
     color: #E5CB90;
-    border: 1.5px solid rgba(229, 203, 144, 0.4);
+    border: none;
     cursor: pointer;
-    line-height: 1;
-    backdrop-filter: blur(4px);
-    font-size: 0.75rem;
-    letter-spacing: 0.5px;
-    transition: background 0.2s ease, transform 0.15s ease, opacity 0.2s ease;
 }
 
 .delete-btn:hover {
-    background: #E5CB90;
-    color: #2E4A4F;
-    border-color: #E5CB90;
     transform: scale(1.12);
 }
 

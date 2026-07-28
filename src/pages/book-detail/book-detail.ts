@@ -206,6 +206,7 @@ export class BookDetail implements OnInit {
 
   addToLibrary(): void {
     if (!this.inLibrary()) {
+      const genre = this.subjects.length > 0 ? this.subjects.join(', ') : null;
       this.library.addBook({
         ...this.book(),
         rating: this.userRating(),
@@ -215,6 +216,7 @@ export class BookDetail implements OnInit {
         date_started: this.userDateStarted() || null,
         date_finished: this.userDateFinished() || null,
         notes: this.userNotes() || null,
+        genre,
       }).subscribe({
         next: (newBook) => {
           this.inLibrary.set(true);
@@ -233,6 +235,7 @@ export class BookDetail implements OnInit {
     if (this.inLibrary()) {
       this.syncToBackend();
     } else {
+      const genre = this.subjects.length > 0 ? this.subjects.join(', ') : null;
       this.library.addBook({
         ...this.book(),
         rating: this.userRating(),
@@ -242,6 +245,7 @@ export class BookDetail implements OnInit {
         date_started: this.userDateStarted() || null,
         date_finished: this.userDateFinished() || null,
         notes: value || null,
+        genre,
       }).subscribe({
         next: (newBook) => {
           this.inLibrary.set(true);
@@ -272,6 +276,11 @@ export class BookDetail implements OnInit {
         date_finished: this.userDateFinished() || null,
         notes: this.userNotes() || null,
       }).subscribe({
+        next: (updated) => {
+          this.userStatus.set(updated.status ?? 'Want to Read');
+          this.userDateStarted.set(updated.date_started ?? '');
+          this.userDateFinished.set(updated.date_finished ?? '');
+        },
         error: (err) => console.error('Failed to sync:', err)
       });
     }
